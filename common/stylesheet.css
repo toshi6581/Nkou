@@ -1,0 +1,63 @@
+/* header fontはこれだった AxisStd-Regular, sans-serif; */
+body{
+  width: 980px;
+  margin: 0 auto;
+}
+/* どこまで980pxにするかは後で見直そう */
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: ;
+}
+
+a:active {
+  color: ;
+}
+
+/* 一番上のヘッダー */
+div.headerTop{
+  display: flex;
+  font-size: 12px;
+  line-height: 17px;
+  height: 30px;
+  background-color: #F7F7F7;
+  padding-bottom: 10px;
+}
+
+div.headerTop h3{
+  weight:700;
+  color: #272727;
+  padding-left: 10px;
+}
+
+div.headerTop ul{
+  display: flex;
+  color: #676767;
+  margin-left: auto;
+}
+
+div.headerTop ul li{
+  padding: 0px 10px;
+  border-left: 1px solid #ccc;
+}
+
+div.headerTop ul li:first-child{
+  border-left: none;
+}
+
+div.headerTop ul li:last-child{
+  background-color: #D9D8D8;
+  color: #006;
+}
