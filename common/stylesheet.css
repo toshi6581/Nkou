@@ -1,8 +1,7 @@
 /* header fontはこれだった AxisStd-Regular, sans-serif; */
 body {
-  /* width: 1060px;
-  margin: 0 auto; */
-  /* あとで直す */
+  width: 1060px;
+  margin: 0 auto;
   font-family: AxisStd-Regular, sans-serif;
 }
 
@@ -30,6 +29,15 @@ a:active {
 }
 
 /* 一番上のヘッダー ナビゲーションバー*/
+/* test フル画面表示できるか */
+.fluid-box {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F7F7F7;
+}
+
 div.headerNavTop {
   display: flex;
   font-size: 12px;
@@ -37,6 +45,9 @@ div.headerNavTop {
   height: 30px;
   background-color: #F7F7F7;
   padding-bottom: 10px;
+  width: 1060px;
+  margin: 0 auto;
+
 }
 
 div.headerNavTop h3 {
@@ -235,35 +246,33 @@ div.catchCopy h1:before {
 }
 
 /* 6 パンくずリスト */
-div.panKuzu{
+div.panKuzu {
   font-family: AxisStd-Light, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
-   "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-   font-size: 14px;
-   line-height: 25px;
+    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
   display: flex;
-  padding:20px 0 20px 0;
-
+  padding: 20px 0 20px 0;
   border-bottom: 1px solid #ccc;
-
 }
 
-div.panKuzu a{
-   color: #36538d;
+div.panKuzu a {
+  color: #36538d;
 }
 
-div.panKuzu a:hover{
+div.panKuzu a:hover {
   text-decoration: underline;
 }
 
-div.panKuzu ul{
+div.panKuzu ul {
   margin: 0 0 0 10px;
 }
 
-div.panKuzu ul li{
+div.panKuzu ul li {
   color: #272727;
 }
 
-div.panKuzu ul li:before{
-content: ">";
-padding-right:5px;
+div.panKuzu ul li:before {
+  content: ">";
+  padding-right: 5px;
 }
