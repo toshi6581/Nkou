@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="common/normalize.css">
-    <link rel="stylesheet" href="common/stylesheet.css">
-    <meta charset="utf-8">
-    <title>N高について | N高等学校(通信制高校 広域・単位制)</title>
-  </head>
-  <body>
-  <div class="headerTop">
+
+<head>
+  <link rel="stylesheet" href="common/normalize.css">
+  <link rel="stylesheet" href="common/stylesheet.css">
+  <meta charset="utf-8">
+  <title>N高について | N高等学校(通信制高校 広域・単位制)</title>
+</head>
+
+<body>
+  <div class="headerNavTop">
     <h3>カドカワが創る新しいネットの高校</h3>
     <ul>
       <li><a href="#">入学案内</a></li>
@@ -16,8 +18,64 @@
       <li><a href="#">N高ブログ</a></li>
       <li><a href="#">WEB出願</a></li>
       <li><a href="#">卒業された方へ</a></li>
-      <li><a href="#">生徒用ログイン</a></li>
+      <li><a href="#" class="login">生徒用ログイン</a></li>
+      <!-- aをinline-blockにしてとかやればいいかと思ったがうまくいが図 -->
     </ul>
   </div>
-  </body>
+
+  <div class="headerNavLogo">
+    <a href="#"><img src="./common/images/header_mainlogo_pc01.png" alt="ロゴ" width='211px' height='45px'></a>
+
+    <div class="headerNavLogoPhone"><img src="./common/images/header_tel03.png" alt="電話番号">
+      <p>受付時間：平日9:30～20:00</p>
+    </div>
+
+    <div class="headerNavLogoSns"><a href="#"><img src="./common/images/header_social01_01.png" alt="Facebook"></a>
+      <a href="#"><img src="./common/images/header_social01_02.png" alt="Twitter"></a>
+      <a href="#"><img src="./common/images/header_social01_03.png" alt="Youtube"></a></div>
+  </div>
+
+  <div class="headerNavAbout">
+    <ul>
+      <li>N高について</li>
+      <!-- 下3つはhover時に画像が切り替わるようになっている -->
+      <li><a href="#">ネットコース</a></li>
+      <li><a href="#">通学コース</a></li>
+      <li><a href="#">提携スクール</a></li>
+
+      <div class="headerNavAboutbox">
+        <p><a href="#">説明会・相談会</a></p>
+        <p><a href="#">資料請求</a></p>
+      </div>
+    </ul>
+  </div>
+
+  <div class="headerNavNavy">
+    <ul>
+      <li><a href="#">高校資格取得について</a></li>
+
+<!-- ここ聞こう。一番最初だけbeforeを適用しない方法ないか確認する。first-child的にやる方法あるのではないか。 -->
+
+      <li class="backslash"><a href="#">Advanced Program</a></li>
+      <li class="backslash"><a href="#">ITツール</a></li>
+      <li class="backslash"><a href="#">イベント・学校行事</a></li>
+      <li class="backslash"><a href="#">N高企業部</a></li>
+      <li class="backslash"><a href="#">在校生の声</a></li>
+      <li class="backslash"><a href="#">保護者の声</a></li>
+      <li class="backslash"><a href="#">生徒の進路・活動実績</a></li>
+      <li class="backslash"><a href="#">学校関係者・著名人からのメッセージ</a></li>
+      <li class="backslash"><a href="#">制服紹介</a></li>
+      <li class="backslash"><a href="#">キャンパス</a></li>
+      <li class="backslash"><a href="#">動画一覧</a></li>
+      <li class="backslash"><a href="#">学費</a></li>
+      <li class="backslash"><a href="#">N STANDARDS</a></li>
+      <!-- </div> -->
+    </ul>
+  </div>
+
+
+
+
+</body>
+
 </html>

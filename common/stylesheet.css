@@ -1,12 +1,14 @@
 /* header fontはこれだった AxisStd-Regular, sans-serif; */
-body{
-  width: 980px;
+body {
+  width: 1060px;
   margin: 0 auto;
+  font-family: AxisStd-Regular, sans-serif;
 }
-/* どこまで980pxにするかは後で見直そう */
 
-ul{
+/* どこまで980pxにするかは後で見直そう */
+ul {
   list-style: none;
+  padding-inline-start: 0px;
 }
 
 a {
@@ -26,8 +28,8 @@ a:active {
   color: ;
 }
 
-/* 一番上のヘッダー */
-div.headerTop{
+/* 一番上のヘッダー ナビゲーションバー*/
+div.headerNavTop {
   display: flex;
   font-size: 12px;
   line-height: 17px;
@@ -36,28 +38,142 @@ div.headerTop{
   padding-bottom: 10px;
 }
 
-div.headerTop h3{
-  weight:700;
+div.headerNavTop h3 {
+  weight: 700;
   color: #272727;
   padding-left: 10px;
 }
 
-div.headerTop ul{
+div.headerNavTop ul {
   display: flex;
   color: #676767;
   margin-left: auto;
 }
 
-div.headerTop ul li{
+div.headerNavTop ul li {
   padding: 0px 10px;
   border-left: 1px solid #ccc;
+  height: 10px;
 }
 
-div.headerTop ul li:first-child{
+div.headerNavTop ul li:first-child {
   border-left: none;
 }
 
-div.headerTop ul li:last-child{
+div.headerNavTop ul li a.login {
   background-color: #D9D8D8;
   color: #006;
+  display: inline-block;
+  height: auto;
 }
+
+/* 学校のロゴヘッダー ナビゲーションバー*/
+div.headerNavLogo {
+  display: flex;
+  height: 100px;
+  padding-top: 20px;
+}
+
+div.headerNavLogo p {
+  font-size: 11px;
+  line-height: 15px;
+  color: #8d959c;
+}
+
+div.headerNavLogoPhone {
+  display: table-column;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+div.headerNavLogoPhone p {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+div.headerNavLogoSns a {
+  margin-left: 5px;
+}
+
+/* AboutSchool ナビゲーション */
+div.headerNavAbout ul {
+  display: flex;
+  font-size: 15px;
+  color: #1f286f;
+  padding-left: 0;
+}
+
+div.headerNavAbout ul li {
+  line-height: 17px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+div.headerNavAbout ul p {
+  font-weight: 700;
+  line-height: 21px;
+  width: 170px;
+  border: 1px solid #1f286f;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+div.headerNavAboutbox {
+  display: flex;
+  margin-left: 50px;
+}
+
+div.headerNavAboutbox a:hover {
+  background-color: #211C74;
+  color: #fff;
+}
+
+/* 紺色背景のナビゲーションバー */
+div.headerNavNavy {
+  background-color: #191438;
+}
+
+div.headerNavNavy li.backslash:before {
+  content: url(./images/icon_backslash01_black01.png);
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+
+div.headerNavNavy ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+div.headerNavNavy ul li {
+  font-family: AxisStd-Light, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+div.headerNavNavy ul li:first-child {
+  margin-left: 20px;
+}
+
+div.headerNavNavy ul li a {
+  display: inline-block;
+  padding: 7px;
+}
+
+div.headerNavNavy ul li a:hover {
+  background-color: #fff;
+  color: #191438;
+}
+
+/* これなんで入れたのか謎だけど残しておく */
+/* div.headerNavNavy ul li a {
+  display: block;
+} */
