@@ -2,7 +2,7 @@
 body {
   width: 1060px;
   margin: 0 auto;
-  font-family: AxisStd-Regular, sans-serif;
+  font-family: "AxisStd-Regular", sans-serif;
 }
 
 /* どこまで980pxにするかは後で見直そう */
@@ -47,7 +47,6 @@ div.headerNavTop {
   padding-bottom: 10px;
   width: 1060px;
   margin: 0 auto;
-
 }
 
 div.headerNavTop h3 {
@@ -82,7 +81,6 @@ div.headerNavTop ul li a.login {
 /* 学校のロゴヘッダー ナビゲーションバー*/
 div.headerNavLogo {
   display: flex;
-  height: 100px;
   padding-top: 20px;
 }
 
@@ -147,8 +145,14 @@ div.headerNavAboutbox a:hover {
 }
 
 /* 紺色背景のナビゲーションバー */
+.headerNavNavyBackground {
+  background-color: #191438;
+}
+
 div.headerNavNavy {
   background-color: #191438;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 div.headerNavNavy li.backslash:before {
@@ -165,7 +169,7 @@ div.headerNavNavy ul {
 }
 
 div.headerNavNavy ul li {
-  font-family: AxisStd-Light, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+  font-family: "AxisStd-Light", メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
     "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -189,8 +193,6 @@ div.headerNavNavy ul li a:hover {
 /* 5 キャッチコピーと画像 */
 div.catchCopy {
   background-image: url(./images/about_mainimage01.jpg);
-  background-size: auto 530px;
-  background-repeat: no-repeat;
   height: 530px;
   display: flex;
 }
@@ -253,7 +255,8 @@ div.panKuzu {
   line-height: 25px;
   display: flex;
   padding: 20px 0 20px 0;
-  border-bottom: 1px solid #ccc;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 div.panKuzu a {
@@ -275,4 +278,97 @@ div.panKuzu ul li {
 div.panKuzu ul li:before {
   content: ">";
   padding-right: 5px;
+}
+
+div.fluid-boxPankuzu {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* <!-- 7 IT×グローバル社会を生き抜くのところ --> */
+.mainText {
+  color: #272727;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mainText h2 {
+  font-size: 33px;
+  line-height: 59px;
+  font-family: "AxisStd-Light", sans-serif;
+}
+
+.mainText h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-family: "AxisStd-Light", sans-serif;
+}
+
+/*以下で線を表示*/
+.mainText h3:before {
+  content: '';
+  position: relative;
+  left: 50%;
+  bottom: -90px;
+  /*線の上下位置*/
+  display: block;
+  width: 200px;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: black;
+  /*線の色*/
+}
+
+.mainText p {
+  font-size: 16px;
+  line-height: 29px;
+  text-indent: 0;
+}
+
+/*   <!-- 8 教育方針, N standards, N高の魅力 -->　*/
+.mainTextContents {
+  color: #272727;
+}
+
+.mainTextContents h2 {
+  font-size: 26px;
+  line-height: 47px;
+  margin-bottom: 0
+}
+
+.mainTextContents h3 {
+  font-size: 24px;
+  line-height: 43px;
+  border-right: 1px solid #000;
+  margin-top: 0;
+  padding: 0 10px;
+}
+
+.mainTextContents p {
+  font-size: 19px;
+  line-height: 34px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.mainTextContentsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTextContentsListBlock {
+  display: flex;
+}
+
+.mainTextContentsflex {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding-top: 40px;
+
 }
