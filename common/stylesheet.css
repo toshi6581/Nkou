@@ -500,8 +500,88 @@ div.fluid-boxPankuzu {
   /*線の色*/
 }
 
-.kosotuShikakuMainText p{
+.kosotuShikakuMainText p {
   font-size: 16px;
   line-height: 29px;
-  
+}
+
+/* css共通で使う予定のimgHidariを書いていく */
+.imgHidari {
+  display: flex;
+  width: 1060px;
+  margin: 60px auto;
+}
+
+.imgHidariImage {
+  display: flex;
+  width: 70%;
+}
+
+.imgHidariImage img {
+  max-width: 100%;
+  /* なんでmax-widthにするかわかんないけど、サイトがそうしてるからとりあえず */
+  height: auto;
+}
+
+.imgHidariText {
+  display: flex;
+  width: 28%;
+  margin-left: 2%;
+}
+
+.imgHidariTextColumn {
+  display: flex;
+  flex-direction: column;
+  height: 504px;
+}
+
+.imgHidariTextColumn h3{
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.imgHidariTextColumnMidashi{
+  background-color: #1A1A1A;
+  margin: 0;
+  width: 100px;
+}
+.imgHidariTextColumn p{
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.imgHidariTextColumn p img {
+  width: 80%;
+  padding: 10px 10px 0 10px;
+}
+
+span.imgHidariSpan{
+  font-size: 11px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.readMore{
+  width: 25%;
+}
+
+.imgHidariTextColumnImg:before {
+  content: url(./images/icon_arrow01_right_black01.png);
+  width: 90%;
+}
+
+.imgHidariTextColumnImg a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  line-height: 504px;
+  width: 28%;
+}
+
+.imgHidariText:hover {
+  opacity: 0.7;
 }
