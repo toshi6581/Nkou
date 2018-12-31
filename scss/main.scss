@@ -1,0 +1,55 @@
+@mixin fluid-box {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin defaultFont($size, $height, $weight:400) {
+  font-size: $size;
+  line-height: $height;
+  color: #272727;
+  font-weight: $weight;
+  font-family: AxisStd-Light, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.message {
+  @include fluid-box;
+  background-color: #F7F7F7;
+
+  .message__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1060px;
+    margin: 0 auto;
+
+    .message__box {
+      background: white;
+      border: 1px solid #ccc;
+      padding-left: 20px;
+      width: 43%;
+      margin: 20px;
+
+      .message__box--normal {
+        @include defaultFont(25px, 45px);
+        margin-bottom: 0;
+
+        + .message__box--small {
+          @include defaultFont(13px, 23px);
+          margin-top: 0;
+          padding-right: 50px;
+        }
+      }
+    }
+  }
+}
+
+.message {
+  .height-133 {
+    height: 133px;
+
+    .height-113 {
+      height: 113px;
+    }
+  }
+}

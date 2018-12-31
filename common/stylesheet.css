@@ -29,48 +29,6 @@ a:active {
   color: ;
 }
 
-/* 一番上のヘッダー ナビゲーションバー*/
-/* test フル画面表示できるか */
-.fluid-box {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #F7F7F7;
-}
-
-div.headerNavTop {
-  display: flex;
-  font-size: 12px;
-  line-height: 17px;
-  height: 30px;
-  background-color: #F7F7F7;
-  padding-bottom: 10px;
-  width: 1060px;
-  margin: 0 auto;
-}
-
-div.headerNavTop h3 {
-  weight: 700;
-  color: #272727;
-  padding-left: 10px;
-}
-
-div.headerNavTop ul {
-  display: flex;
-  color: #676767;
-  margin-left: auto;
-}
-
-div.headerNavTop ul li {
-  padding: 0px 10px;
-  border-left: 1px solid #ccc;
-  height: 10px;
-}
-
-div.headerNavTop ul li:first-child {
-  border-left: none;
-}
 
 div.headerNavTop ul li a.login {
   background-color: #D9D8D8;
@@ -78,6 +36,7 @@ div.headerNavTop ul li a.login {
   display: inline-block;
   height: auto;
 }
+/* ここの設定はわからないからとりあえず残しておく */
 
 /* 学校のロゴヘッダー ナビゲーションバー*/
 div.headerNavLogo {
@@ -535,18 +494,19 @@ div.fluid-boxPankuzu {
   height: 504px;
 }
 
-.imgHidariTextColumn h3{
+.imgHidariTextColumn h3 {
   font-size: 22px;
   line-height: 40px;
   font-weight: 400;
 }
 
-.imgHidariTextColumnMidashi{
+.imgHidariTextColumnMidashi {
   background-color: #1A1A1A;
   margin: 0;
   width: 100px;
 }
-.imgHidariTextColumn p{
+
+.imgHidariTextColumn p {
   font-size: 16px;
   line-height: 29px;
   font-weight: 400;
@@ -558,13 +518,13 @@ div.fluid-boxPankuzu {
   padding: 10px 10px 0 10px;
 }
 
-span.imgHidariSpan{
+span.imgHidariSpan {
   font-size: 11px;
   line-height: 20px;
   margin-bottom: 20px;
 }
 
-.readMore{
+.readMore {
   width: 25%;
 }
 
@@ -593,12 +553,29 @@ span.imgHidariSpan{
   margin-left: 0;
 }
 
-.fluid-boxSecond{
-  padding-bottom: 100px
+.fluid-boxSecond {
+  padding-bottom: 100px;
+  border-top: 1px solid #ccc;
 }
 
-span.imgMigiSpan{
+span.imgMigiSpan {
   font-size: 13px;
   line-height: 23px;
   margin-bottom: 20px;
+}
+
+/* <!-- 10 プロフェッショナルによる将来へ繋がるAdvanced Program --> */
+#advancedProgram {
+  background-color: #fff;
+}
+
+.imgHidariTextColumnMidashiAdvanced {
+  background-color: #1A1A1A;
+  margin: 0;
+  width: 125px;
+}
+
+.imgHidariTextColumn p img {
+  width: 85%;
+  padding: 7px 7px 0px 7px;
 }

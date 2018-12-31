@@ -1,0 +1,36 @@
+/* 1 一番上のナビゲーション
+   ----------------------------------------------------------------- */
+.headerTop {
+  font-size: 12px;
+  line-height: 17px;
+  height: 30px;
+
+  &-heading {
+    font-weight: 700;
+    color: #272727;
+  }
+}
+
+.headerTop-list {
+  color: #676767;
+
+  &__text {
+    height: 10px;
+    border-left: 1px solid #ccc;
+  }
+}
+/* 2 学校名と電話番号
+   ----------------------------------------------------------------- */
+.headerSecond {
+  &-media {
+      &__text {
+      font-size: 11px;
+      line-height: 15px;
+      color: #8d959c;
+    }
+  }
+}
+
+.headerSecond-sns a{
+
+}

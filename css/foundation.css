@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.l-fluid-box {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: #F7F7F7; これは一旦コメントアウトする*/ }
+
+/* flexbox
+   ----------------------------------------------------------------- */
+.l-displayflex {
+  display: flex; }
+
+.l-justify-right {
+  display: flex;
+  justify-content: right; }
+
+.l-justify-left {
+  display: flex;
+  justify-content: left; }
+
+.l-justify-center {
+  display: flex;
+  justify-content: center; }
+
+.l-table-column {
+  display: table-column; }
+
+/* 1 一番上のナビゲーション
+   ----------------------------------------------------------------- */
+.headerTop {
+  font-size: 12px;
+  line-height: 17px;
+  height: 30px; }
+  .headerTop-heading {
+    font-weight: 700;
+    color: #272727; }
+
+.headerTop-list {
+  color: #676767; }
+  .headerTop-list__text {
+    height: 10px;
+    border-left: 1px solid #ccc; }
+
+/* 2 学校名と電話番号
+   ----------------------------------------------------------------- */
+.headerSecond-media__text {
+  font-size: 11px;
+  line-height: 15px;
+  color: #8d959c; }
+
+/* color
+   ----------------------------------------------------------------- */
+.u-bgc-grey {
+  background-color: #F7F7F7; }
+
+/* margin
+   ----------------------------------------------------------------- */
+.u-margin0auto {
+  margin: 0 auto; }
+
+.u-mla {
+  margin-left: auto; }
+
+.u-ml5 {
+  margin-left: 5px; }
+
+.u-mr20 {
+  margin-right: 20px; }
+
+.u-mt0 {
+  margin-top: 0; }
+
+/* padding
+   ----------------------------------------------------------------- */
+.u-pt20 {
+  padding-top: 20px; }
+
+.u-pd10 {
+  padding-bottom: 10px; }
+
+.u-pl10 {
+  padding-left: 10px; }
+
+.u-ptb0rl10 {
+  padding: 0px 10px; }
+
+/* width
+   ----------------------------------------------------------------- */
+.u-w1060 {
+  width: 1060px; }
+
+/* border
+   ----------------------------------------------------------------- */
+.u-bln {
+  border-left: none; }
+
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  font-size: 100%;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.8;
+  word-wrap: break-word; }
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+a:visited {
+  color: inherit; }
+
+/*# sourceMappingURL=foundation.css.map */

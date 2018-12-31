@@ -1,0 +1,33 @@
+.l-fluid-box {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: #F7F7F7; これは一旦コメントアウトする*/
+}
+
+/* flexbox
+   ----------------------------------------------------------------- */
+
+.l-displayflex{
+  display: flex;
+}
+
+.l-justify-right{
+  display: flex;
+  justify-content: right;
+}
+
+.l-justify-left{
+  display: flex;
+  justify-content: left;
+}
+
+.l-justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.l-table-column{
+  display: table-column;
+}
