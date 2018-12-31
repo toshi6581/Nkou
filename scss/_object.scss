@@ -23,7 +23,7 @@
    ----------------------------------------------------------------- */
 .headerSecond {
   &-media {
-      &__text {
+    &__text {
       font-size: 11px;
       line-height: 15px;
       color: #8d959c;
@@ -31,6 +31,162 @@
   }
 }
 
-.headerSecond-sns a{
+.headerSecond-sns a {}
+/* 3 N高についてのナビゲーションバー
+   ----------------------------------------------------------------- */
+.headerThird {
+  &-list {
+    font-size: 15px;
+    color: #1f286f;
 
+    &__text {
+      line-height: 17px;
+      border: solid #ccc;
+      border-width: 0 1px 0 1px;
+      width: 160px;
+    }
+  }
 }
+
+.headerThird-box__text {
+  font-weight: 700;
+  line-height: 21px;
+  width: 170px;
+  border: 1px solid #1f286f;
+
+  & a:hover {
+    background-color: #211C74;
+    color: #fff;
+  }
+}
+/* 4 紺色のバー
+   ----------------------------------------------------------------- */
+.headerfourth {
+  &-list {
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+
+      & a {
+        display: inline-block;
+        padding: 7px;
+
+        &:hover {
+          background-color: #fff;
+          color: #191438;
+        }
+      }
+    }
+  }
+}
+//斜めの区切り線
+
+.backslash:before {
+  content: url("../common/images/icon_backslash01_black01.png");
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+}
+/* 5 キャッチコピーと画像
+   ----------------------------------------------------------------- */
+.main-outer {
+  &-box {
+    background-image: url("../common/images/about_mainimage01.jpg");
+    height: 530px;
+    width: 100%;
+
+    &__heading {
+      font-size: 52px;
+      line-height: 94px;
+      font-weight: 400;
+      text-align: center;
+
+      &__img {
+        height: 13px;
+      }
+    }
+  }
+}
+/*以下で線を表示*/
+.main-outer-box__heading:before {
+  content: '';
+  position: relative;
+  left: 50%;
+  bottom: -90px;
+  /*線の上下位置*/
+  display: block;
+  width: 200px;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: white;
+  /*線の色*/
+}
+/* 6 パンくずリスト
+   ----------------------------------------------------------------- */
+.pankuzu {
+  font-size: 14px;
+  line-height: 25px;
+
+  & a {
+    color: #36538d;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+/* 7 IT×グローバル社会を生き抜くのところ
+   ----------------------------------------------------------------- */
+.maintext {
+  &-heading {
+    &__large {
+      font-size: 33px;
+      line-height: 59px;
+    }
+  }
+}
+
+.maintext {
+  &-heading {
+    &__small {
+      font-size: 22px;
+      line-height: 40px;
+    }
+  }
+}
+
+.maintext__text{
+  font-size: 16px;
+  line-height: 29px;
+}
+
+/*以下で線を表示*/
+.maintext-heading__small:before {
+  content: '';
+  position: relative;
+  left: 50%;
+  bottom: -90px;
+  /*線の上下位置*/
+  display: block;
+  width: 200px;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: black;
+  /*線の色*/
+}
+
+/* 8 教育方針, N standards, N高の魅力
+   ----------------------------------------------------------------- */

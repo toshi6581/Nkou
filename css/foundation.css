@@ -26,6 +26,15 @@
 .l-table-column {
   display: table-column; }
 
+.l-flex-wrap {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* display
+   ----------------------------------------------------------------- */
+.l-displayblock {
+  display: block; }
+
 /* 1 一番上のナビゲーション
    ----------------------------------------------------------------- */
 .headerTop {
@@ -49,15 +58,163 @@
   line-height: 15px;
   color: #8d959c; }
 
+/* 3 N高についてのナビゲーションバー
+   ----------------------------------------------------------------- */
+.headerThird-list {
+  font-size: 15px;
+  color: #1f286f; }
+  .headerThird-list__text {
+    line-height: 17px;
+    border: solid #ccc;
+    border-width: 0 1px 0 1px;
+    width: 160px; }
+
+.headerThird-box__text {
+  font-weight: 700;
+  line-height: 21px;
+  width: 170px;
+  border: 1px solid #1f286f; }
+  .headerThird-box__text a:hover {
+    background-color: #211C74;
+    color: #fff; }
+
+/* 4 紺色のバー
+   ----------------------------------------------------------------- */
+.headerfourth-list__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff; }
+  .headerfourth-list__text a {
+    display: inline-block;
+    padding: 7px; }
+    .headerfourth-list__text a:hover {
+      background-color: #fff;
+      color: #191438; }
+
+.backslash:before {
+  content: url("../common/images/icon_backslash01_black01.png");
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff; }
+
+/* 5 キャッチコピーと画像
+   ----------------------------------------------------------------- */
+.main-outer-box {
+  background-image: url("../common/images/about_mainimage01.jpg");
+  height: 530px;
+  width: 100%; }
+  .main-outer-box__heading {
+    font-size: 52px;
+    line-height: 94px;
+    font-weight: 400;
+    text-align: center; }
+    .main-outer-box__heading__img {
+      height: 13px; }
+
+/*以下で線を表示*/
+.main-outer-box__heading:before {
+  content: '';
+  position: relative;
+  left: 50%;
+  bottom: -90px;
+  /*線の上下位置*/
+  display: block;
+  width: 200px;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: white;
+  /*線の色*/ }
+
+/* 6 パンくずリスト
+   ----------------------------------------------------------------- */
+.pankuzu {
+  font-size: 14px;
+  line-height: 25px; }
+  .pankuzu a {
+    color: #36538d; }
+    .pankuzu a:hover {
+      text-decoration: underline; }
+
+/* 7 IT×グローバル社会を生き抜くのところ
+   ----------------------------------------------------------------- */
+.maintext-heading__large {
+  font-size: 33px;
+  line-height: 59px; }
+
+.maintext-heading__small {
+  font-size: 22px;
+  line-height: 40px; }
+
+.maintext__text {
+  font-size: 16px;
+  line-height: 29px; }
+
+/*以下で線を表示*/
+.maintext-heading__small:before {
+  content: '';
+  position: relative;
+  left: 50%;
+  bottom: -90px;
+  /*線の上下位置*/
+  display: block;
+  width: 200px;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: black;
+  /*線の色*/ }
+
+/* 8 教育方針, N standards, N高の魅力
+   ----------------------------------------------------------------- */
 /* color
    ----------------------------------------------------------------- */
 .u-bgc-grey {
   background-color: #F7F7F7; }
 
+.u-bgc-navy {
+  background-color: #191438; }
+
+.u-white {
+  color: white; }
+
+.u-colorlg {
+  color: #272727; }
+
+/* font-famiily
+   ----------------------------------------------------------------- */
+.u-fontfamily {
+  font-family: "AxisStd-Light", sans-serif; }
+
 /* margin
    ----------------------------------------------------------------- */
 .u-margin0auto {
   margin: 0 auto; }
+
+.u-mt0 {
+  margin-top: 0; }
+
+.u-mt25 {
+  margin-top: 25px; }
+
+.u-mt70 {
+  margin-top: 70px; }
+
+.u-mt90 {
+  margin-top: 90px; }
+
+.u-mr20 {
+  margin-right: 20px; }
 
 .u-mla {
   margin-left: auto; }
@@ -65,35 +222,73 @@
 .u-ml5 {
   margin-left: 5px; }
 
-.u-mr20 {
-  margin-right: 20px; }
+.u-ml10 {
+  margin-left: 10px; }
 
-.u-mt0 {
-  margin-top: 0; }
+.u-ml20 {
+  margin-left: 20px; }
+
+.u-ml50 {
+  margin-left: 50px; }
+
+.u-mb0 {
+  margin-bottom: 0; }
 
 /* padding
    ----------------------------------------------------------------- */
+.u-p10 {
+  padding: 10px; }
+
 .u-pt20 {
   padding-top: 20px; }
 
+.u-pt30 {
+  padding-top: 30px; }
+
 .u-pd10 {
   padding-bottom: 10px; }
+
+.u-pl0 {
+  padding-left: 0; }
 
 .u-pl10 {
   padding-left: 10px; }
 
 .u-ptb0rl10 {
-  padding: 0px 10px; }
+  padding: 0 10px; }
+
+.u-ptb10rl0 {
+  padding: 10px 0; }
+
+.u-ptb20rl0 {
+  padding: 20px 0; }
 
 /* width
    ----------------------------------------------------------------- */
+.u-w5 {
+  width: 5%; }
+
+.u-w10 {
+  width: 10%; }
+
 .u-w1060 {
   width: 1060px; }
 
+.u-maxw100 {
+  max-width: 100%; }
+
 /* border
    ----------------------------------------------------------------- */
+.u-border {
+  border: 1px solid #ccc; }
+
 .u-bln {
   border-left: none; }
+
+/* text-align
+   ----------------------------------------------------------------- */
+.u-tacenter {
+  text-align: center; }
 
 html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
   margin: 0;
@@ -116,9 +311,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit; }
-
-a:visited {
   color: inherit; }
 
 /*# sourceMappingURL=foundation.css.map */

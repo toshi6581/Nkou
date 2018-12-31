@@ -6,20 +6,6 @@ body {
   color: #272727;
 }
 
-/* どこまで980pxにするかは後で見直そう */
-ul {
-  list-style: none;
-  padding-inline-start: 0px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:visited {
-  color: inherit;
-}
 
 a:hover {
   color: ;
@@ -38,107 +24,17 @@ div.headerNavTop ul li a.login {
 }
 /* ここの設定はわからないからとりあえず残しておく */
 
-/* 学校のロゴヘッダー ナビゲーションバー*/
-div.headerNavLogo {
-  display: flex;
-  padding-top: 20px;
-}
 
-div.headerNavLogo p {
-  font-size: 11px;
-  line-height: 15px;
-  color: #8d959c;
-}
-
-div.headerNavLogoPhone {
-  display: table-column;
-  margin-left: auto;
-  margin-right: 20px;
-}
-
-div.headerNavLogoPhone p {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-}
-
-div.headerNavLogoSns a {
-  margin-left: 5px;
-}
 
 /* AboutSchool ナビゲーション */
-div.headerNavAbout ul {
-  display: flex;
-  font-size: 15px;
-  color: #1f286f;
-  padding-left: 0;
-}
-
-div.headerNavAbout ul li {
-  line-height: 17px;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  width: 160px;
-  display: flex;
-  justify-content: center;
-}
-
-div.headerNavAbout ul p {
-  font-weight: 700;
-  line-height: 21px;
-  width: 170px;
-  border: 1px solid #1f286f;
-  padding: 10px 0px;
-  display: flex;
-  justify-content: center;
-  margin-left: 10px;
-}
 
 div.headerNavAboutbox {
   display: flex;
-  margin-left: 50px;
-}
+}/* ここの設定はわからないからとりあえず残しておく */
 
-div.headerNavAboutbox a:hover {
-  background-color: #211C74;
-  color: #fff;
-}
+
 
 /* 紺色背景のナビゲーションバー */
-.headerNavNavyBackground {
-  background-color: #191438;
-}
-
-div.headerNavNavy {
-  background-color: #191438;
-  width: 1060px;
-  margin: 0 auto;
-}
-
-div.headerNavNavy li.backslash:before {
-  content: url(./images/icon_backslash01_black01.png);
-  display: inline-block;
-  padding: 0 10px 0 10px;
-}
-
-div.headerNavNavy ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin-bottom: 0;
-}
-
-div.headerNavNavy ul li {
-  font-family: "AxisStd-Light", メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
-    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #fff;
-}
-
-div.headerNavNavy ul li:first-child {
-  margin-left: 20px;
-}
 
 div.headerNavNavy ul li a {
   display: inline-block;

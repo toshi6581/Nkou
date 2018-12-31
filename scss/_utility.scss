@@ -1,58 +1,141 @@
 /* color
    ----------------------------------------------------------------- */
-.u-bgc-grey{
+.u-bgc-grey {
   background-color: #F7F7F7;
+}
+
+.u-bgc-navy {
+  background-color: #191438;
+}
+
+.u-white {
+  color: white;
+}
+
+.u-colorlg{
+  color: #272727;
+}
+
+
+/* font-famiily
+   ----------------------------------------------------------------- */
+.u-fontfamily{
+font-family: "AxisStd-Light", sans-serif;
 }
 
 /* margin
    ----------------------------------------------------------------- */
-.u-margin0auto{
+.u-margin0auto {
   margin: 0 auto;
 }
 
-.u-mla{
-  margin-left: auto;
-}
-
-.u-ml5{
-  margin-left: 5px;
-}
-
-.u-mr20{
-  margin-right: 20px;
-}
-
-.u-mt0{
+.u-mt0 {
   margin-top: 0;
 }
 
+.u-mt25 {
+  margin-top: 25px;
+}
+.u-mt70{
+  margin-top: 70px;
+}
+
+.u-mt90{
+  margin-top: 90px;
+}
+
+.u-mr20 {
+  margin-right: 20px;
+}
+
+.u-mla {
+  margin-left: auto;
+}
+
+.u-ml5 {
+  margin-left: 5px;
+}
+
+.u-ml10 {
+  margin-left: 10px;
+}
+
+.u-ml20 {
+  margin-left: 20px;
+}
+
+.u-ml50 {
+  margin-left: 50px;
+}
+
+.u-mb0 {
+  margin-bottom: 0;
+}
 /* padding
    ----------------------------------------------------------------- */
-.u-pt20{
+.u-p10 {
+  padding: 10px;
+}
+
+.u-pt20 {
   padding-top: 20px;
 }
 
-.u-pd10{
+.u-pt30 {
+  padding-top: 30px;
+}
+
+.u-pd10 {
   padding-bottom: 10px;
 }
 
-.u-pl10{
+.u-pl0 {
+  padding-left: 0;
+}
+
+.u-pl10 {
   padding-left: 10px;
 }
 
-.u-ptb0rl10{
-  padding: 0px 10px;
+.u-ptb0rl10 {
+  padding: 0 10px;
 }
 
+.u-ptb10rl0 {
+  padding: 10px 0;
+}
 
+.u-ptb20rl0{
+  padding: 20px 0;
+}
 /* width
    ----------------------------------------------------------------- */
-.u-w1060{
+.u-w5 {
+  width: 5%;
+}
+
+.u-w10 {
+  width: 10%;
+}
+
+.u-w1060 {
   width: 1060px;
 }
 
+.u-maxw100 {
+  max-width: 100%;
+}
 /* border
    ----------------------------------------------------------------- */
-.u-bln{
+.u-border{
+  border: 1px solid #ccc;
+}
+
+.u-bln {
   border-left: none;
+}
+/* text-align
+   ----------------------------------------------------------------- */
+.u-tacenter {
+  text-align: center;
 }
