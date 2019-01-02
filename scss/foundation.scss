@@ -1,19 +1,36 @@
 @import "layout", "object", "utility";
 
-html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, div, span, img, a, table, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
   letter-spacing: 0.5px;
   font-weight: normal;
   font-size: 100%;
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family:"wf-mplus1p",メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   vertical-align:baseline;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 1.8;
   word-wrap: break-word;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family:"wf-mplus1p",メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  vertical-align:baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 29px;
+  word-wrap: break-word;
+  color:#272727
 }
 
 ul {
@@ -25,3 +42,5 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.wf-mplus1p { font-family: "M PLUS 1p"; }

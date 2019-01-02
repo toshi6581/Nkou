@@ -175,8 +175,165 @@
   background-color: black;
   /*線の色*/ }
 
-/* 8 教育方針, N standards, N高の魅力
+/* 8 教育方針
    ----------------------------------------------------------------- */
+.block-header {
+  font-size: 26px;
+  line-height: 47px; }
+.block-inner__header {
+  font-size: 24px;
+  line-height: 43px; }
+.block-inner__text {
+  font-size: 19px;
+  line-height: 34px; }
+.block-inner__img {
+  width: 60%;
+  max-width: 630px;
+  height: auto; }
+
+/* 8 N standards
+   ----------------------------------------------------------------- */
+.small-block {
+  background: #f6f6f6;
+  width: 65%;
+  height: 330px;
+  position: relative; }
+  .small-block-inner__heading {
+    font-size: 22px;
+    line-height: 22px; }
+  .small-block-inner__text {
+    font-size: 16px;
+    line-height: 29px; }
+
+.inner-block__img {
+  width: 15%; }
+.inner-block__a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  line-height: 330px;
+  line-height: 330px;
+  display: block; }
+
+.inner-block:before {
+  content: url("../common/images/icon_arrow01_right_black01.png"); }
+
+/* 8 N高の魅力
+   ----------------------------------------------------------------- */
+.small-blocksecond__heading {
+  font-size: 26px;
+  line-height: 47px; }
+.small-blocksecond-inner__heading {
+  font-size: 25px;
+  line-height: 45px; }
+.small-blocksecond-inner__note p {
+  font-size: 12px;
+  line-height: 22px; }
+
+.small-blockthird-inner__heading {
+  font-size: 25px;
+  line-height: 45px; }
+
+/* 9 高卒資格取得のためのBasic Program
+   ----------------------------------------------------------------- */
+.blockfirst-inner {
+  text-align: center; }
+  .blockfirst-inner__heading {
+    font-size: 33px;
+    line-height: 59px; }
+
+/*以下で線を表示*/
+.blockfirst-inner__heading:before {
+  content: '';
+  position: relative;
+  left: 50%;
+  bottom: -60px;
+  /*線の上下位置*/
+  display: block;
+  width: 200px;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: black;
+  /*線の色*/ }
+
+.block-anchor:hover {
+  opacity: 0.7; }
+.block-inner__image {
+  background-color: #1A1A1A;
+  width: 100px;
+  height: 25px; }
+.block-inner__heading {
+  font-size: 22px;
+  line-height: 40px; }
+.block-inner__text {
+  font-size: 16px;
+  line-height: 29px; }
+  .block-inner__text__small {
+    font-size: 11px;
+    line-height: 20px; }
+
+.block-inner-small:before {
+  content: url("../common/images/icon_arrow01_right_black01.png"); }
+
+.block-inner__heading span {
+  letter-spacing: 0.6px;
+  font-size: 10px; }
+
+.secondblock-inner__image {
+  background-color: #1A1A1A;
+  width: 100px;
+  height: 25px; }
+.secondblock-inner__heading {
+  font-size: 22px;
+  line-height: 40px; }
+.secondblock-inner__text {
+  font-size: 16px;
+  line-height: 29px; }
+  .secondblock-inner__text__small {
+    font-size: 13px;
+    line-height: 23px; }
+
+.secondblock-inner-small:before {
+  content: url("../common/images/icon_arrow01_right_black01.png"); }
+
+.secondblock-inner__heading span {
+  letter-spacing: 0.6px;
+  font-size: 10px; }
+
+/* 10 プロフェッショナルによる将来へ繋がるAdvanced Program
+   ----------------------------------------------------------------- */
+.blockthird-anchor:hover {
+  opacity: 0.7; }
+.blockthird-inner__image {
+  background-color: #1A1A1A;
+  width: 125px;
+  height: 25px; }
+.blockthird-inner__heading {
+  font-size: 22px;
+  line-height: 40px; }
+.blockthird-inner__text {
+  font-size: 16px;
+  line-height: 29px; }
+  .blockthird-inner__text__small {
+    font-size: 11px;
+    line-height: 20px; }
+
+.blockthird-inner-small:before {
+  content: url("../common/images/icon_arrow01_right_black01.png"); }
+
+.fourthblock-inner__image {
+  background-color: #1A1A1A;
+  width: 125px;
+  height: 25px; }
+
 /* color
    ----------------------------------------------------------------- */
 .u-bgc-grey {
@@ -198,26 +355,68 @@
 
 /* margin
    ----------------------------------------------------------------- */
+.u-m0 {
+  margin: 0; }
+
 .u-margin0auto {
   margin: 0 auto; }
+
+.u-margin50auto {
+  margin: 50px auto; }
+
+.u-margin60auto {
+  margin: 60px auto; }
+
+.u-margin80auto {
+  margin: 80px auto; }
+
+.u-mt110auto {
+  margin: 110px auto 0; }
 
 .u-mt0 {
   margin-top: 0; }
 
+.u-mt5 {
+  margin-top: 5px; }
+
+.u-mt20 {
+  margin-top: 20px; }
+
 .u-mt25 {
   margin-top: 25px; }
+
+.u-mt30 {
+  margin-top: 30px; }
+
+.u-mt35 {
+  margin-top: 35px; }
+
+.u-mt40 {
+  margin-top: 40px; }
 
 .u-mt70 {
   margin-top: 70px; }
 
+.u-mt80 {
+  margin-top: 80px; }
+
 .u-mt90 {
   margin-top: 90px; }
+
+.u-mr3 {
+  margin-right: 3%; }
 
 .u-mr20 {
   margin-right: 20px; }
 
+.u-mr60 {
+  margin-right: 60px; }
+
 .u-mla {
   margin-left: auto; }
+
+.u-ml3 {
+  margin-left: 3%; }
 
 .u-ml5 {
   margin-left: 5px; }
@@ -234,10 +433,47 @@
 .u-mb0 {
   margin-bottom: 0; }
 
+.u-mb25 {
+  margin-bottom: 25px; }
+
+.u-mb30 {
+  margin-bottom: 30px; }
+
+.u-mb100 {
+  margin-bottom: 100px; }
+
+.u-mtb20 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.u-mtb25 {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.u-mtb30 {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.u-mtb80 {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
 /* padding
    ----------------------------------------------------------------- */
+.u-p7-10-0-10 {
+  padding: 7px 10px 0 10px; }
+
 .u-p10 {
   padding: 10px; }
+
+.u-p30 {
+  padding: 30px; }
+
+.u-pt5 {
+  padding-top: 5px; }
+
+.u-pt15 {
+  padding-top: 15px; }
 
 .u-pt20 {
   padding-top: 20px; }
@@ -245,8 +481,23 @@
 .u-pt30 {
   padding-top: 30px; }
 
-.u-pd10 {
+.u-pt40 {
+  padding-top: 40px; }
+
+.u-pt70 {
+  padding-top: 70px; }
+
+.u-pt80 {
+  padding-top: 80px; }
+
+.u-pr10 {
+  padding-right: 10px; }
+
+.u-pb10 {
   padding-bottom: 10px; }
+
+.u-pb110 {
+  padding-bottom: 110px; }
 
 .u-pl0 {
   padding-left: 0; }
@@ -271,8 +522,29 @@
 .u-w10 {
   width: 10%; }
 
-.u-w1060 {
-  width: 1060px; }
+.u-w25 {
+  width: 25%; }
+
+.u-28 {
+  width: 28%; }
+
+.u-w55 {
+  width: 55%; }
+
+.u-w66 {
+  width: 66%; }
+
+.u-w70 {
+  width: 70%; }
+
+.u-w80 {
+  width: 80%; }
+
+.u-w680 {
+  width: 680px; }
+
+.u-w1040 {
+  width: 1040px; }
 
 .u-maxw100 {
   max-width: 100%; }
@@ -282,6 +554,25 @@
 .u-border {
   border: 1px solid #ccc; }
 
+.u-bordertop {
+  border-top: 1px solid #ccc; }
+
+.u-bordertopbottom {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2; }
+
+.u-bordertop__black {
+  border-top: 1px solid #1c1c1c; }
+
+.u-borderbottom__black {
+  border-bottom: 1px solid #1c1c1c; }
+
+.u-borderright {
+  border-right: 1px solid #ccc; }
+
+.u-borderright__black {
+  border-right: 1px solid #1c1c1c; }
+
 .u-bln {
   border-left: none; }
 
@@ -290,20 +581,36 @@
 .u-tacenter {
   text-align: center; }
 
-html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, div, span, img, a, table, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
   letter-spacing: 0.5px;
   font-weight: normal;
   font-size: 100%;
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family: "wf-mplus1p",メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 1.8;
   word-wrap: break-word; }
+
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "wf-mplus1p",メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 29px;
+  word-wrap: break-word;
+  color: #272727; }
 
 ul {
   list-style: none;
@@ -312,5 +619,8 @@ ul {
 a {
   text-decoration: none;
   color: inherit; }
+
+.wf-mplus1p {
+  font-family: "M PLUS 1p"; }
 
 /*# sourceMappingURL=foundation.css.map */

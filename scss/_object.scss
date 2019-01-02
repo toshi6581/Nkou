@@ -1,3 +1,6 @@
+%header-second {}
+
+%header-third {}
 /* 1 一番上のナビゲーション
    ----------------------------------------------------------------- */
 .headerTop {
@@ -162,11 +165,10 @@
   }
 }
 
-.maintext__text{
+.maintext__text {
   font-size: 16px;
   line-height: 29px;
 }
-
 /*以下で線を表示*/
 .maintext-heading__small:before {
   content: '';
@@ -187,6 +189,236 @@
   background-color: black;
   /*線の色*/
 }
-
-/* 8 教育方針, N standards, N高の魅力
+/* 8 教育方針
    ----------------------------------------------------------------- */
+.block {
+  &-header {
+    font-size: 26px;
+    line-height: 47px;
+  }
+
+  &-inner {
+    &__header {
+      font-size: 24px;
+      line-height: 43px;
+    }
+
+    &__text {
+      font-size: 19px;
+      line-height: 34px;
+    }
+
+    &__img {
+      width: 60%;
+      max-width: 630px;
+      height: auto;
+    }
+  }
+}
+/* 8 N standards
+   ----------------------------------------------------------------- */
+.small-block {
+  background: #f6f6f6;
+  width: 65%;
+  height: 330px;
+  position: relative;
+
+  &-inner {
+    &__heading {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 29px;
+    }
+  }
+}
+
+.inner-block {
+  &__img {
+    width: 15%;
+  }
+
+  &__a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    line-height: 330px;
+    line-height: 330px;
+    display: block;
+
+    &:hover {}
+  }
+}
+
+.inner-block:before {
+  content: url("../common/images/icon_arrow01_right_black01.png");
+}
+/* 8 N高の魅力
+   ----------------------------------------------------------------- */
+.small-blocksecond {
+  &__heading {
+    font-size: 26px;
+    line-height: 47px;
+  }
+
+  &-inner {
+    &__heading {
+      font-size: 25px;
+      line-height: 45px;
+    }
+
+    &__note p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+}
+
+.small-blockthird-inner__heading {
+  font-size: 25px;
+  line-height: 45px;
+}
+/* 9 高卒資格取得のためのBasic Program
+   ----------------------------------------------------------------- */
+.blockfirst-inner {
+  text-align: center;
+
+  &__heading {
+    font-size: 33px;
+    line-height: 59px;
+  }
+}
+/*以下で線を表示*/
+.blockfirst-inner__heading:before {
+  content: '';
+  position: relative;
+  left: 50%;
+  bottom: -60px;
+  /*線の上下位置*/
+  display: block;
+  width: 200px;
+  /*線の長さ*/
+  height: 1px;
+  /*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: black;
+  /*線の色*/
+}
+
+.block{
+  &-anchor:hover{
+    opacity: 0.7;
+  }
+  &-inner {
+    &__image {
+    background-color: #1A1A1A;
+    width: 100px;
+    height: 25px;
+  }
+
+  &__heading {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 29px;
+
+    &__small {
+      font-size: 11px;
+      line-height: 20px;
+    }
+  }
+}
+}
+.block-inner-small:before {
+  content: url("../common/images/icon_arrow01_right_black01.png");
+}
+
+.block-inner__heading span{
+  letter-spacing: 0.6px;
+  font-size:10px;
+}
+
+.secondblock{
+  &-inner {
+    &__image {
+    background-color: #1A1A1A;
+    width: 100px;
+    height: 25px;
+  }
+
+  &__heading {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 29px;
+
+    &__small {
+      font-size: 13px;
+      line-height: 23px;
+    }
+  }
+}
+}
+.secondblock-inner-small:before {
+  content: url("../common/images/icon_arrow01_right_black01.png");
+}
+
+.secondblock-inner__heading span{
+  letter-spacing: 0.6px;
+  font-size:10px;
+}
+
+/* 10 プロフェッショナルによる将来へ繋がるAdvanced Program
+   ----------------------------------------------------------------- */
+   .blockthird{
+     &-anchor:hover{
+       opacity: 0.7;
+     }
+     &-inner {
+       &__image {
+       background-color: #1A1A1A;
+       width: 125px;
+       height: 25px;
+     }
+
+     &__heading {
+       font-size: 22px;
+       line-height: 40px;
+     }
+
+     &__text {
+       font-size: 16px;
+       line-height: 29px;
+
+       &__small {
+         font-size: 11px;
+         line-height: 20px;
+       }
+     }
+   }
+}
+
+.blockthird-inner-small:before {
+  content: url("../common/images/icon_arrow01_right_black01.png");
+}
+
+.fourthblock-inner__image {
+background-color: #1A1A1A;
+width: 125px;
+height: 25px;
+}
