@@ -334,6 +334,86 @@
   width: 125px;
   height: 25px; }
 
+/* 13 Youtube
+   ----------------------------------------------------------------- */
+.video__text {
+  font-size: 13px;
+  line-height: 23px; }
+
+/* 14 N高についてさらに詳細を知りたい方はこちら
+   ----------------------------------------------------------------- */
+.inquire-bgi {
+  background-image: url("../common/images/footer02_bg01.png"); }
+
+.inquire {
+  color: white; }
+  .inquire-heading {
+    font-size: 20px;
+    line-height: 28px; }
+  .inquire-left__item {
+    font-size: 18px;
+    line-height: 25px;
+    color: #1c1c1c;
+    width: 260px;
+    height: 55px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    position: relative; }
+    .inquire-left__item img {
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      width: 11%; }
+  .inquire-right {
+    position: relative; }
+    .inquire-right__img {
+      display: block;
+      width: 95%; }
+    .inquire-right__text {
+      font-size: 12px; }
+    .inquire-right__button {
+      font-size: 13px;
+      border: 1px solid white;
+      width: 210px;
+      height: 40px; }
+      .inquire-right__button a {
+        display: inline-block;
+        height: 100%;
+        width: 100%; }
+        .inquire-right__button a:hover {
+          text-decoration: underline; }
+
+.inquire-left__item:after {
+  content: url("../common/images/icon_arrow01_right_black01.png");
+  position: absolute;
+  top: 15px;
+  right: 10px; }
+
+.inquire-right__button:after {
+  content: url("../common/images/icon_arrow01_right_white01.png");
+  position: absolute;
+  bottom: 28px;
+  right: 10px; }
+
+/* 15 トップ・中3生 などのバー
+   ----------------------------------------------------------------- */
+.nav {
+  margin-top: 35px; }
+  .nav-list li {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #006;
+    padding: 0 10px;
+    height: 25px;
+    margin-top: 20px;
+    border-left: solid 1px #989cbb; }
+    .nav-list li:first-child {
+      border-left: none; }
+    .nav-list li a:hover {
+      text-decoration: underline; }
+
 /* color
    ----------------------------------------------------------------- */
 .u-bgc-grey {
@@ -361,6 +441,9 @@
 .u-margin0auto {
   margin: 0 auto; }
 
+.u-margin30auto {
+  margin: 30px auto; }
+
 .u-margin50auto {
   margin: 50px auto; }
 
@@ -378,6 +461,12 @@
 
 .u-mt5 {
   margin-top: 5px; }
+
+.u-mt10 {
+  margin-top: 10px; }
+
+.u-mt15 {
+  margin-top: 15px; }
 
 .u-mt20 {
   margin-top: 20px; }
@@ -427,8 +516,17 @@
 .u-ml20 {
   margin-left: 20px; }
 
+.u-ml40 {
+  margin-left: 40px; }
+
 .u-ml50 {
   margin-left: 50px; }
+
+.u-ml70 {
+  margin-left: 70px; }
+
+.u-mla0 {
+  margin-left: auto; }
 
 .u-mb0 {
   margin-bottom: 0; }
@@ -471,6 +569,9 @@
 
 .u-pt5 {
   padding-top: 5px; }
+
+.u-pt10 {
+  padding-top: 10px; }
 
 .u-pt15 {
   padding-top: 15px; }
@@ -539,6 +640,9 @@
 
 .u-w80 {
   width: 80%; }
+
+.u-w570 {
+  width: 570px; }
 
 .u-w680 {
   width: 680px; }

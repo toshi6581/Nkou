@@ -314,103 +314,106 @@
   /*線の色*/
 }
 
-.block{
-  &-anchor:hover{
+.block {
+  &-anchor:hover {
     opacity: 0.7;
   }
+
   &-inner {
     &__image {
-    background-color: #1A1A1A;
-    width: 100px;
-    height: 25px;
-  }
+      background-color: #1A1A1A;
+      width: 100px;
+      height: 25px;
+    }
 
-  &__heading {
-    font-size: 22px;
-    line-height: 40px;
-  }
+    &__heading {
+      font-size: 22px;
+      line-height: 40px;
+    }
 
-  &__text {
-    font-size: 16px;
-    line-height: 29px;
+    &__text {
+      font-size: 16px;
+      line-height: 29px;
 
-    &__small {
-      font-size: 11px;
-      line-height: 20px;
+      &__small {
+        font-size: 11px;
+        line-height: 20px;
+      }
     }
   }
 }
-}
+
 .block-inner-small:before {
   content: url("../common/images/icon_arrow01_right_black01.png");
 }
 
-.block-inner__heading span{
+.block-inner__heading span {
   letter-spacing: 0.6px;
-  font-size:10px;
+  font-size: 10px;
 }
 
-.secondblock{
+.secondblock {
   &-inner {
     &__image {
-    background-color: #1A1A1A;
-    width: 100px;
-    height: 25px;
-  }
+      background-color: #1A1A1A;
+      width: 100px;
+      height: 25px;
+    }
 
-  &__heading {
-    font-size: 22px;
-    line-height: 40px;
-  }
+    &__heading {
+      font-size: 22px;
+      line-height: 40px;
+    }
 
-  &__text {
-    font-size: 16px;
-    line-height: 29px;
+    &__text {
+      font-size: 16px;
+      line-height: 29px;
 
-    &__small {
-      font-size: 13px;
-      line-height: 23px;
+      &__small {
+        font-size: 13px;
+        line-height: 23px;
+      }
     }
   }
 }
-}
+
 .secondblock-inner-small:before {
   content: url("../common/images/icon_arrow01_right_black01.png");
 }
 
-.secondblock-inner__heading span{
+.secondblock-inner__heading span {
   letter-spacing: 0.6px;
-  font-size:10px;
+  font-size: 10px;
 }
-
 /* 10 プロフェッショナルによる将来へ繋がるAdvanced Program
    ----------------------------------------------------------------- */
-   .blockthird{
-     &-anchor:hover{
-       opacity: 0.7;
-     }
-     &-inner {
-       &__image {
-       background-color: #1A1A1A;
-       width: 125px;
-       height: 25px;
-     }
+.blockthird {
+  &-anchor:hover {
+    opacity: 0.7;
+  }
 
-     &__heading {
-       font-size: 22px;
-       line-height: 40px;
-     }
+  &-inner {
+    &__image {
+      background-color: #1A1A1A;
+      width: 125px;
+      height: 25px;
+    }
 
-     &__text {
-       font-size: 16px;
-       line-height: 29px;
+    &__heading {
+      font-size: 22px;
+      line-height: 40px;
+    }
 
-       &__small {
-         font-size: 11px;
-         line-height: 20px;
-       }
-     }
-   }
+    &__text {
+      font-size: 16px;
+      line-height: 29px;
+
+      &__small {
+        font-size: 11px;
+        line-height: 20px;
+      }
+    }
+  }
 }
 
 .blockthird-inner-small:before {
@@ -418,7 +421,120 @@
 }
 
 .fourthblock-inner__image {
-background-color: #1A1A1A;
-width: 125px;
-height: 25px;
+  background-color: #1A1A1A;
+  width: 125px;
+  height: 25px;
+}
+/* 13 Youtube
+   ----------------------------------------------------------------- */
+.video {
+  &__text {
+    font-size: 13px;
+    line-height: 23px;
+  }
+}
+/* 14 N高についてさらに詳細を知りたい方はこちら
+   ----------------------------------------------------------------- */
+.inquire-bgi {
+  background-image: url("../common/images/footer02_bg01.png");
+}
+
+.inquire {
+  color: white;
+
+  &-heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &-left__item {
+    font-size: 18px;
+    line-height: 25px;
+    color: #1c1c1c;
+    width: 260px;
+    height: 55px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    position: relative;
+
+    & img {
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      width: 11%;
+    }
+
+    & a {}
+  }
+
+  &-right {
+    position: relative;
+
+    &__img {
+      display: block;
+      width: 95%;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__button {
+      font-size: 13px;
+      border: 1px solid white;
+      width: 210px;
+      height: 40px;
+
+      & a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.inquire-left__item:after {
+  content: url("../common/images/icon_arrow01_right_black01.png");
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.inquire-right__button:after {
+  content: url("../common/images/icon_arrow01_right_white01.png");
+  position: absolute;
+  bottom: 28px;
+  right: 10px;
+}
+/* 15 トップ・中3生 などのバー
+   ----------------------------------------------------------------- */
+.nav {
+  margin-top: 35px;
+
+  &-list {
+    & li {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 700;
+      color: #006;
+      padding: 0 10px;
+      height: 25px;
+      margin-top: 20px;
+      border-left: solid 1px #989cbb;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
