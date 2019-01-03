@@ -538,25 +538,77 @@
     }
   }
 }
-
 /* 16 フッターメニュー
    ----------------------------------------------------------------- */
-footer{
+footer {
   font-size: 14px;
   line-height: 20px;
-  & ul li{
-    margin-bottom: 5px;
 
-    &:first-child{
-    font-size: 16px;
-    line-height: 22px;
-    color: #000066;
-  }
-  & span{
-    font-size: 11px;
-    line-height: 15px;
-    display: block;
-  }
+  & .footer-primary {
+    & ul li {
+      margin-bottom: 5px;
 
+      &:first-child {
+        font-size: 16px;
+        line-height: 22px;
+        color: #000066;
+      }
+
+      & span {
+        font-size: 11px;
+        line-height: 15px;
+        display: block;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
+/* 17 個人情報保護方針
+   ----------------------------------------------------------------- */
+.secondery-sns {
+  &__item {
+    font-size: 12px;
+    line-height: 14px;
+    height: 45px;
+    border-right: 1px solid #ccc;
+    &:last-child{
+      width: 190px;
+      border-right: none;
+    }
+    & p{
+      font-size: 12px;
+      line-height: 14px;
+
+    }
+    & a {
+      display: flex;
+      line-height: 15px;
+      &:hover{
+        background-color:#EDEDED;
+      }
+      &:after{
+        content:">";
+        margin: 5px 10px 0 10px;
+      }
+
+    }
+
+    & img {
+      display: inline-flex;
+      width: 25px;
+      height:25px;
+    }
+  }
+}
+
+/* 18 最後のフッター
+   ----------------------------------------------------------------- */
+  .footer-last{
+    & p{
+      font-size: 11px;
+      color: #999;
+  }
 }

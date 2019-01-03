@@ -419,21 +419,58 @@
 footer {
   font-size: 14px;
   line-height: 20px; }
-  footer ul li {
+  footer .footer-primary ul li {
     margin-bottom: 5px; }
-    footer ul li:first-child {
+    footer .footer-primary ul li:first-child {
       font-size: 16px;
       line-height: 22px;
       color: #000066; }
-    footer ul li span {
+    footer .footer-primary ul li span {
       font-size: 11px;
       line-height: 15px;
       display: block; }
+    footer .footer-primary ul li a:hover {
+      text-decoration: underline; }
+
+/* 17 個人情報保護方針
+   ----------------------------------------------------------------- */
+.secondery-sns__item {
+  font-size: 12px;
+  line-height: 14px;
+  height: 45px;
+  border-right: 1px solid #ccc; }
+  .secondery-sns__item:last-child {
+    width: 190px;
+    border-right: none; }
+  .secondery-sns__item p {
+    font-size: 12px;
+    line-height: 14px; }
+  .secondery-sns__item a {
+    display: flex;
+    line-height: 15px; }
+    .secondery-sns__item a:hover {
+      background-color: #EDEDED; }
+    .secondery-sns__item a:after {
+      content: ">";
+      margin: 5px 10px 0 10px; }
+  .secondery-sns__item img {
+    display: inline-flex;
+    width: 25px;
+    height: 25px; }
+
+/* 18 最後のフッター
+   ----------------------------------------------------------------- */
+.footer-last p {
+  font-size: 11px;
+  color: #999; }
 
 /* color
    ----------------------------------------------------------------- */
 .u-bgc-grey {
   background-color: #F7F7F7; }
+
+.u-bgc-blk {
+  background-color: black; }
 
 .u-bgc-navy {
   background-color: #191438; }
@@ -459,6 +496,9 @@ footer {
 
 .u-margin0auto {
   margin: 0 auto; }
+
+.u-margin20auto {
+  margin: 20px auto; }
 
 .u-margin30auto {
   margin: 30px auto; }
@@ -598,6 +638,9 @@ footer {
 .u-pt5 {
   padding-top: 5px; }
 
+.u-pt8 {
+  padding-top: 8px; }
+
 .u-pt10 {
   padding-top: 10px; }
 
@@ -606,6 +649,9 @@ footer {
 
 .u-pt20 {
   padding-top: 20px; }
+
+.u-pt25 {
+  padding-top: 25px; }
 
 .u-pt30 {
   padding-top: 30px; }
@@ -674,6 +720,15 @@ footer {
 
 .u-w80 {
   width: 80%; }
+
+.u-w135 {
+  width: 135px; }
+
+.u-w155 {
+  width: 155px; }
+
+.u-w190 {
+  width: 190px; }
 
 .u-w570 {
   width: 570px; }
