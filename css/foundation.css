@@ -414,6 +414,22 @@
     .nav-list li a:hover {
       text-decoration: underline; }
 
+/* 16 フッターメニュー
+   ----------------------------------------------------------------- */
+footer {
+  font-size: 14px;
+  line-height: 20px; }
+  footer ul li {
+    margin-bottom: 5px; }
+    footer ul li:first-child {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000066; }
+    footer ul li span {
+      font-size: 11px;
+      line-height: 15px;
+      display: block; }
+
 /* color
    ----------------------------------------------------------------- */
 .u-bgc-grey {
@@ -424,6 +440,9 @@
 
 .u-white {
   color: white; }
+
+.u-black {
+  color: black; }
 
 .u-colorlg {
   color: #272727; }
@@ -455,6 +474,9 @@
 
 .u-mt110auto {
   margin: 110px auto 0; }
+
+.u-mt-15 {
+  margin-top: -15px; }
 
 .u-mt0 {
   margin-top: 0; }
@@ -504,6 +526,9 @@
 .u-mla {
   margin-left: auto; }
 
+.u-ml2 {
+  margin-left: 2%; }
+
 .u-ml3 {
   margin-left: 3%; }
 
@@ -530,6 +555,9 @@
 
 .u-mb0 {
   margin-bottom: 0; }
+
+.u-mb10 {
+  margin-bottom: 10px; }
 
 .u-mb25 {
   margin-bottom: 25px; }
@@ -622,6 +650,12 @@
 
 .u-w10 {
   width: 10%; }
+
+.u-w18 {
+  width: 18%; }
+
+.u-w20 {
+  width: 20%; }
 
 .u-w25 {
   width: 25%; }

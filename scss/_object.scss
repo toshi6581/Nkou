@@ -538,3 +538,25 @@
     }
   }
 }
+
+/* 16 フッターメニュー
+   ----------------------------------------------------------------- */
+footer{
+  font-size: 14px;
+  line-height: 20px;
+  & ul li{
+    margin-bottom: 5px;
+
+    &:first-child{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000066;
+  }
+  & span{
+    font-size: 11px;
+    line-height: 15px;
+    display: block;
+  }
+
+}
+}
