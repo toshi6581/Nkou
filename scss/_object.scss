@@ -18,10 +18,55 @@
   color: #676767;
 
   &__text {
-    height: 10px;
-    border-left: 1px solid #ccc;
+    & a:hover{
+        text-decoration: underline;
+    }
+
+    &:after{
+      content: "|";
+      color:inherit;
+      margin: 0 15px;
+    }
+
+  &__button a{
+    display: inline-block;
+    height: 30px;
+    background: #D9D8D8;
+    }
   }
 }
+
+.headerTop-list__button{
+    position: relative;
+    background: #D9D8D8;
+    width: 130px;
+    height: 30px;
+  & a{
+    color: #000066;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.headerTop-list__button a i{
+  display: inline-block;
+  background: url("../common/images/icon_site_mark01.png");
+  background-size: 16px 20px;
+  width: 16px;
+  height: 20px;
+  margin: 0 5px 4px 0;
+  vertical-align: middle;
+}
+
+.no-content:after{
+  content: none;
+}
+
 /* 2 学校名と電話番号
    ----------------------------------------------------------------- */
 .headerSecond {
