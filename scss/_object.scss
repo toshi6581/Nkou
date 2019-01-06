@@ -25,7 +25,7 @@
     &:after{
       content: "|";
       color:inherit;
-      margin: 0 15px;
+      margin: 0 10px;
     }
 
   &__button a{
@@ -79,34 +79,106 @@
   }
 }
 
-.headerSecond-sns a {}
+.headerSecond-sns a:hover{
+  opacity: 0.7;
+}
 /* 3 N高についてのナビゲーションバー
    ----------------------------------------------------------------- */
 .headerThird {
   &-list {
     font-size: 15px;
-    color: #1f286f;
+    &__text{
+      width: 180px;
+    }
+    & li:first-child{
+      color: #1f286f;
+
+    &:before{
+        content: "|";
+        color:black;
+        margin: 0 25px 0 0;
+      }
+    }
 
     &__text {
       line-height: 17px;
-      border: solid #ccc;
-      border-width: 0 1px 0 1px;
-      width: 160px;
+      &:after{
+        content: "|";
+        color:black;
+        margin: 0 25px;
+      }
     }
   }
 }
 
 .headerThird-box__text {
-  font-weight: 700;
+  font-size: 15px;
   line-height: 21px;
   width: 170px;
+  height: 40px;
   border: 1px solid #1f286f;
+  position: relative;
 
-  & a:hover {
+  & a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+
+    &:hover {
     background-color: #211C74;
     color: #fff;
   }
 }
+}
+
+.headerThird-box__text a i{
+  display: inline-block;
+  background: url("../common/images/icon_arrow01_right_blue01.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: 5px;
+  height: 9px;
+  background-size: 5px 9px;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
+
+// hover時に画像切り替えの参考コード
+//.demo02 a:hover {
+//     background-position: 0 -38px;
+// }
+//
+// //.headerThird-list__text i {
+//     width: 100%;
+//     height: 38px;
+//     background: url("../common/images/global_nav_btn01_02.png") no-repeat;
+//     display: block;
+//     text-indent: -9999px;
+// }
+
+.headerThird-list__text i :hover {
+    background-position: 0 -38px;
+}
+
+//scss参考例 extend
+.tableHead {
+    background-color: #222;
+    color: #eee;
+    font-size: 12px;
+}
+
+.myTableHead {
+    @extend .tableHead;  // 既存のクラスが元になっている
+    font-size: 10px;     // ここだけ変更
+}
+
 /* 4 紺色のバー
    ----------------------------------------------------------------- */
 .headerfourth {
@@ -115,6 +187,21 @@
       font-size: 14px;
       line-height: 20px;
       color: #fff;
+      &:first-child{
+        position: relative;
+      }
+
+      & div{
+        position: absolute;
+        top: -75%;
+        left: 35%;
+         width: 0;
+         height: 0;
+         border-top: solid 10px transparent;
+         border-right: solid 10px transparent;
+         border-bottom: solid 20px #181836;
+         border-left: solid 10px transparent;
+      }
 
       & a {
         display: inline-block;
@@ -142,7 +229,9 @@
   &-box {
     background-image: url("../common/images/about_mainimage01.jpg");
     height: 530px;
-    width: 100%;
+    width: 100vw;
+    background-size: 100VW 100%;
+
 
     &__heading {
       font-size: 52px;
@@ -197,6 +286,7 @@
     &__large {
       font-size: 33px;
       line-height: 59px;
+
     }
   }
 }
@@ -240,6 +330,25 @@
   &-header {
     font-size: 26px;
     line-height: 47px;
+    &:after{
+        content: '';
+        position: relative;
+        left: 12.1%;
+        bottom: 0;
+        /*線の上下位置*/
+        display: block;
+        width: 250px;
+        /*線の長さ*/
+        height: 2px;
+        /*線の太さ*/
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        /*位置調整*/
+        background-color: black;
+        /*線の色*/
+    }
   }
 
   &-inner {
@@ -272,11 +381,14 @@
     &__heading {
       font-size: 22px;
       line-height: 22px;
+
     }
 
     &__text {
       font-size: 16px;
       line-height: 29px;
+      letter-spacing: 0.09em;
+    text-align: justify;
     }
   }
 }
@@ -309,6 +421,25 @@
   &__heading {
     font-size: 26px;
     line-height: 47px;
+    &:after{
+        content: '';
+        position: relative;
+        left: 12.1%;
+        bottom: 0;
+        /*線の上下位置*/
+        display: block;
+        width: 250px;
+        /*線の長さ*/
+        height: 2px;
+        /*線の太さ*/
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        /*位置調整*/
+        background-color: black;
+        /*線の色*/
+    }
   }
 
   &-inner {
@@ -470,14 +601,131 @@
   width: 125px;
   height: 25px;
 }
+
+
+/* 12 N高生からのメッセージ
+   ----------------------------------------------------------------- */
+   @mixin defaultFont($size, $height, $weight:400) {
+     font-size: $size;
+     line-height: $height;
+     color: #272727;
+     font-weight: $weight;
+     font-family: AxisStd-Light, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+   }
+
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+   .message {
+
+     &__wrapper{
+       position: relative;
+       &__first{
+         & div{
+           height: 135px;
+         }
+       }
+}
+       .message__box {
+         background: white;
+         position: relative;
+         width: 480px;
+         &:after{
+           content: '';
+          position:absolute;
+          top: -6px;
+          left: -6px;
+          background: url(../common/images/bg_diagonal01_black01.png);
+          width: 103%;
+          height:110%;
+          vertical-align: middle;
+          z-index: -1;
+         }
+
+         .message__box--normal {
+           @include defaultFont(25px, 45px);
+
+           + .message__box--small {
+             @include defaultFont(13px, 23px);
+             position: relative;
+           }
+         }
+       }
+     }
+
+     .arrow{  //右向き矢印
+       content: "";
+       display: inline-block;
+       width: 7px;
+       height: 15px;
+
+       background-image: url(../common/images/icon_arrow01_right_black01.png);
+       background-repeat: no-repeat;
+       position: absolute;
+       top: 0%;
+       left: 0%;
+       background-repeat: no-repeat;
+     }
+
+.arrow-first::after{
+  @extend .arrow;
+  left: 46%;
+  top: 32%;
+  background-size: 80% 75%;
+}
+
+.arrow-second::after{
+  @extend .arrow;
+  left: 95%;
+  top: 23%;
+  background-size: 80% 75%;
+}
+
+.arrow-third:after{
+  @extend .arrow;
+  left: 43%;
+  top: 77%;
+  background-size: 80% 75%;
+}
+
+.arrow-fourth:after{
+  @extend .arrow;
+  left: 95%;
+top: 80%;
+z-index: 3;
+background-size: 80% 75%;
+}
+
+  // :hover{
+  // opacity: 0.7;
+  // background-image:url("../common/images/bg_diagonal01_black01.png");
+  // background-repeat: repeat;
+  // position: absolute;
+  // top: 0;
+  // right:0;
+  // }
+
+  .message__box:hover{
+    background-image: url(../common/images/bg_diagonal01_black01.png);
+    opacity:0.7
+  }
+  //ここにめちゃくちゃ時間かかったな。なんでaに背景をしていた時に表示されなかったんだろう。
+  //あとa以外にhover出来るの知らなかったのも原因だな
+
 /* 13 Youtube
    ----------------------------------------------------------------- */
 .video {
+  margin: 80px auto 180px;
   &__text {
     font-size: 13px;
     line-height: 23px;
   }
 }
+
+
 /* 14 N高についてさらに詳細を知りたい方はこちら
    ----------------------------------------------------------------- */
 .inquire-bgi {
@@ -502,6 +750,9 @@
     background-color: white;
     text-align: center;
     position: relative;
+    &:hover{
+      background: #C3C3C3;
+    }
 
     & img {
       position: absolute;
@@ -566,7 +817,6 @@
     & li {
       font-size: 16px;
       line-height: 16px;
-      font-weight: 700;
       color: #006;
       padding: 0 10px;
       height: 25px;
@@ -577,11 +827,17 @@
         border-left: none;
       }
 
-      & a:hover {
+      & a{
+        font-weight: bold;
+      &:hover {
         text-decoration: underline;
       }
     }
+    }
   }
+}
+nav ul img:hover{
+  opacity: 0.7;
 }
 /* 16 フッターメニュー
    ----------------------------------------------------------------- */
@@ -597,6 +853,9 @@ footer {
         font-size: 16px;
         line-height: 22px;
         color: #000066;
+        a{
+          font-weight: bold;
+        }
       }
 
       & span {
@@ -613,31 +872,64 @@ footer {
 }
 /* 17 個人情報保護方針
    ----------------------------------------------------------------- */
-.secondery-sns {
+.secondery{
+&-list__text{
+  & a:hover{
+    text-decoration: underline;
+  }
+}
+&-sns {
+  & a {
+    display: inline-block;
+    line-height: 15px;
+    padding-right: 25px;
+    padding-left: 10px;
+    border-right: 1px solid #ccc;
+    position: relative;
+    &:last-child{
+      border-right: none;
+      }
+    &:hover{
+      background-color:#EDEDED;
+    }
+    &.first:after{
+      content:">";
+      margin: 0px 10px 0 10px;
+      display: inline-block;
+      position: absolute;
+      top: 25%;
+      color: #272727;
+    }
+    &.second:after{
+      content:">";
+      margin: 0px 10px 0 10px;
+      display: inline-block;
+      position: absolute;
+      top: 25%;
+      color: #272727;
+    }
+    &.third:after{
+      content:">";
+      margin: 0px 10px 0 10px;
+      display: inline-block;
+      position: absolute;
+      top: 25%;
+      color: #272727;
+    }
+  }
   &__item {
+    display: inline-flex;
     font-size: 12px;
     line-height: 14px;
     height: 45px;
     border-right: 1px solid #ccc;
-    &:last-child{
-      width: 190px;
-      border-right: none;
-    }
+      &:last-child{
+        border-right: none;
+        }
     & p{
       font-size: 12px;
       line-height: 14px;
-
     }
-    & a {
-      display: flex;
-      line-height: 15px;
-      &:hover{
-        background-color:#EDEDED;
-      }
-      &:after{
-        content:">";
-        margin: 5px 10px 0 10px;
-      }
 
     }
 
@@ -655,5 +947,8 @@ footer {
     & p{
       font-size: 11px;
       color: #999;
+      & a:hover{
+        text-decoration: underline;
+      }
   }
 }

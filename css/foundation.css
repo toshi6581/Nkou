@@ -52,7 +52,7 @@
   .headerTop-list__text:after {
     content: "|";
     color: inherit;
-    margin: 0 15px; }
+    margin: 0 10px; }
   .headerTop-list__text__button a {
     display: inline-block;
     height: 30px;
@@ -91,25 +91,70 @@
   line-height: 15px;
   color: #8d959c; }
 
+.headerSecond-sns a:hover {
+  opacity: 0.7; }
+
 /* 3 N高についてのナビゲーションバー
    ----------------------------------------------------------------- */
 .headerThird-list {
-  font-size: 15px;
-  color: #1f286f; }
+  font-size: 15px; }
   .headerThird-list__text {
-    line-height: 17px;
-    border: solid #ccc;
-    border-width: 0 1px 0 1px;
-    width: 160px; }
+    width: 180px; }
+  .headerThird-list li:first-child {
+    color: #1f286f; }
+    .headerThird-list li:first-child:before {
+      content: "|";
+      color: black;
+      margin: 0 25px 0 0; }
+  .headerThird-list__text {
+    line-height: 17px; }
+    .headerThird-list__text:after {
+      content: "|";
+      color: black;
+      margin: 0 25px; }
 
 .headerThird-box__text {
-  font-weight: 700;
+  font-size: 15px;
   line-height: 21px;
   width: 170px;
-  border: 1px solid #1f286f; }
-  .headerThird-box__text a:hover {
-    background-color: #211C74;
-    color: #fff; }
+  height: 40px;
+  border: 1px solid #1f286f;
+  position: relative; }
+  .headerThird-box__text a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold; }
+    .headerThird-box__text a:hover {
+      background-color: #211C74;
+      color: #fff; }
+
+.headerThird-box__text a i {
+  display: inline-block;
+  background: url("../common/images/icon_arrow01_right_blue01.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: 5px;
+  height: 9px;
+  background-size: 5px 9px;
+  position: absolute;
+  top: 40%;
+  right: 5%; }
+
+.headerThird-list__text i :hover {
+  background-position: 0 -38px; }
+
+.tableHead, .myTableHead {
+  background-color: #222;
+  color: #eee;
+  font-size: 12px; }
+
+.myTableHead {
+  font-size: 10px; }
 
 /* 4 紺色のバー
    ----------------------------------------------------------------- */
@@ -117,6 +162,18 @@
   font-size: 14px;
   line-height: 20px;
   color: #fff; }
+  .headerfourth-list__text:first-child {
+    position: relative; }
+  .headerfourth-list__text div {
+    position: absolute;
+    top: -75%;
+    left: 35%;
+    width: 0;
+    height: 0;
+    border-top: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 20px #181836;
+    border-left: solid 10px transparent; }
   .headerfourth-list__text a {
     display: inline-block;
     padding: 7px; }
@@ -135,7 +192,8 @@
 .main-outer-box {
   background-image: url("../common/images/about_mainimage01.jpg");
   height: 530px;
-  width: 100%; }
+  width: 100vw;
+  background-size: 100VW 100%; }
   .main-outer-box__heading {
     font-size: 52px;
     line-height: 94px;
@@ -213,6 +271,24 @@
 .block-header {
   font-size: 26px;
   line-height: 47px; }
+  .block-header:after {
+    content: '';
+    position: relative;
+    left: 12.1%;
+    bottom: 0;
+    /*線の上下位置*/
+    display: block;
+    width: 250px;
+    /*線の長さ*/
+    height: 2px;
+    /*線の太さ*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /*位置調整*/
+    background-color: black;
+    /*線の色*/ }
 .block-inner__header {
   font-size: 24px;
   line-height: 43px; }
@@ -236,7 +312,9 @@
     line-height: 22px; }
   .small-block-inner__text {
     font-size: 16px;
-    line-height: 29px; }
+    line-height: 29px;
+    letter-spacing: 0.09em;
+    text-align: justify; }
 
 .inner-block__img {
   width: 15%; }
@@ -258,6 +336,24 @@
 .small-blocksecond__heading {
   font-size: 26px;
   line-height: 47px; }
+  .small-blocksecond__heading:after {
+    content: '';
+    position: relative;
+    left: 12.1%;
+    bottom: 0;
+    /*線の上下位置*/
+    display: block;
+    width: 250px;
+    /*線の長さ*/
+    height: 2px;
+    /*線の太さ*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /*位置調整*/
+    background-color: black;
+    /*線の色*/ }
 .small-blocksecond-inner__heading {
   font-size: 25px;
   line-height: 45px; }
@@ -367,11 +463,89 @@
   width: 125px;
   height: 25px; }
 
+/* 12 N高生からのメッセージ
+   ----------------------------------------------------------------- */
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e2e2e2; }
+
+.message__wrapper {
+  position: relative; }
+  .message__wrapper__first div {
+    height: 135px; }
+.message .message__box {
+  background: white;
+  position: relative;
+  width: 480px; }
+  .message .message__box:after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    background: url(../common/images/bg_diagonal01_black01.png);
+    width: 103%;
+    height: 110%;
+    vertical-align: middle;
+    z-index: -1; }
+  .message .message__box .message__box--normal {
+    font-size: 25px;
+    line-height: 45px;
+    color: #272727;
+    font-weight: 400;
+    font-family: AxisStd-Light, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+    .message .message__box .message__box--normal + .message__box--small {
+      font-size: 13px;
+      line-height: 23px;
+      color: #272727;
+      font-weight: 400;
+      font-family: AxisStd-Light, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      position: relative; }
+
+.arrow, .arrow-first::after, .arrow-second::after, .arrow-third:after, .arrow-fourth:after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 15px;
+  background-image: url(../common/images/icon_arrow01_right_black01.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-repeat: no-repeat; }
+
+.arrow-first::after {
+  left: 46%;
+  top: 32%;
+  background-size: 80% 75%; }
+
+.arrow-second::after {
+  left: 95%;
+  top: 23%;
+  background-size: 80% 75%; }
+
+.arrow-third:after {
+  left: 43%;
+  top: 77%;
+  background-size: 80% 75%; }
+
+.arrow-fourth:after {
+  left: 95%;
+  top: 80%;
+  z-index: 3;
+  background-size: 80% 75%; }
+
+.message__box:hover {
+  background-image: url(../common/images/bg_diagonal01_black01.png);
+  opacity: 0.7; }
+
 /* 13 Youtube
    ----------------------------------------------------------------- */
-.video__text {
-  font-size: 13px;
-  line-height: 23px; }
+.video {
+  margin: 80px auto 180px; }
+  .video__text {
+    font-size: 13px;
+    line-height: 23px; }
 
 /* 14 N高についてさらに詳細を知りたい方はこちら
    ----------------------------------------------------------------- */
@@ -393,6 +567,8 @@
     background-color: white;
     text-align: center;
     position: relative; }
+    .inquire-left__item:hover {
+      background: #C3C3C3; }
     .inquire-left__item img {
       position: absolute;
       top: 14px;
@@ -436,7 +612,6 @@
   .nav-list li {
     font-size: 16px;
     line-height: 16px;
-    font-weight: 700;
     color: #006;
     padding: 0 10px;
     height: 25px;
@@ -444,8 +619,13 @@
     border-left: solid 1px #989cbb; }
     .nav-list li:first-child {
       border-left: none; }
-    .nav-list li a:hover {
-      text-decoration: underline; }
+    .nav-list li a {
+      font-weight: bold; }
+      .nav-list li a:hover {
+        text-decoration: underline; }
+
+nav ul img:hover {
+  opacity: 0.7; }
 
 /* 16 フッターメニュー
    ----------------------------------------------------------------- */
@@ -458,6 +638,8 @@ footer {
       font-size: 16px;
       line-height: 22px;
       color: #000066; }
+      footer .footer-primary ul li:first-child a {
+        font-weight: bold; }
     footer .footer-primary ul li span {
       font-size: 11px;
       line-height: 15px;
@@ -467,35 +649,63 @@ footer {
 
 /* 17 個人情報保護方針
    ----------------------------------------------------------------- */
+.secondery-list__text a:hover {
+  text-decoration: underline; }
+.secondery-sns a {
+  display: inline-block;
+  line-height: 15px;
+  padding-right: 25px;
+  padding-left: 10px;
+  border-right: 1px solid #ccc;
+  position: relative; }
+  .secondery-sns a:last-child {
+    border-right: none; }
+  .secondery-sns a:hover {
+    background-color: #EDEDED; }
+  .secondery-sns a.first:after {
+    content: ">";
+    margin: 0px 10px 0 10px;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    color: #272727; }
+  .secondery-sns a.second:after {
+    content: ">";
+    margin: 0px 10px 0 10px;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    color: #272727; }
+  .secondery-sns a.third:after {
+    content: ">";
+    margin: 0px 10px 0 10px;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    color: #272727; }
 .secondery-sns__item {
+  display: inline-flex;
   font-size: 12px;
   line-height: 14px;
   height: 45px;
   border-right: 1px solid #ccc; }
   .secondery-sns__item:last-child {
-    width: 190px;
     border-right: none; }
   .secondery-sns__item p {
     font-size: 12px;
     line-height: 14px; }
-  .secondery-sns__item a {
-    display: flex;
-    line-height: 15px; }
-    .secondery-sns__item a:hover {
-      background-color: #EDEDED; }
-    .secondery-sns__item a:after {
-      content: ">";
-      margin: 5px 10px 0 10px; }
-  .secondery-sns__item img {
-    display: inline-flex;
-    width: 25px;
-    height: 25px; }
+.secondery-sns img {
+  display: inline-flex;
+  width: 25px;
+  height: 25px; }
 
 /* 18 最後のフッター
    ----------------------------------------------------------------- */
 .footer-last p {
   font-size: 11px;
   color: #999; }
+  .footer-last p a:hover {
+    text-decoration: underline; }
 
 /* color
    ----------------------------------------------------------------- */
@@ -529,6 +739,9 @@ footer {
 
 .u-margin0auto {
   margin: 0 auto; }
+
+.u-margin5auto {
+  margin: 5 auto; }
 
 .u-margin20auto {
   margin: 20px auto; }
@@ -629,6 +842,9 @@ footer {
 .u-ml50 {
   margin-left: 50px; }
 
+.u-ml60 {
+  margin-left: 60px; }
+
 .u-ml70 {
   margin-left: 70px; }
 
@@ -646,6 +862,9 @@ footer {
 
 .u-mb30 {
   margin-bottom: 30px; }
+
+.u-mb50 {
+  margin-bottom: 50px; }
 
 .u-mb100 {
   margin-bottom: 100px; }
@@ -674,8 +893,14 @@ footer {
 .u-p10 {
   padding: 10px; }
 
+.u-p20 {
+  padding: 20px; }
+
 .u-p30 {
   padding: 30px; }
+
+.u-p37 {
+  padding: 37px; }
 
 .u-pt5 {
   padding-top: 5px; }
@@ -710,8 +935,14 @@ footer {
 .u-pr10 {
   padding-right: 10px; }
 
+.u-pr25 {
+  padding-right: 25px; }
+
 .u-pb10 {
   padding-bottom: 10px; }
+
+.u-pb20 {
+  padding-bottom: 20px; }
 
 .u-pb110 {
   padding-bottom: 110px; }
@@ -721,6 +952,9 @@ footer {
 
 .u-pl10 {
   padding-left: 10px; }
+
+.u-pl20 {
+  padding-left: 20px; }
 
 .u-ptb10 {
   padding-top: 10px;
@@ -734,6 +968,9 @@ footer {
 
 .u-ptb20rl0 {
   padding: 20px 0; }
+
+.u-ptb30rl0 {
+  padding: 30px 0; }
 
 /* width
    ----------------------------------------------------------------- */
@@ -819,6 +1056,9 @@ footer {
    ----------------------------------------------------------------- */
 .u-tacenter {
   text-align: center; }
+
+.u-tajustify {
+  text-align: justify; }
 
 html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, div, span, img, a, table, tr, th, td {
   margin: 0;
