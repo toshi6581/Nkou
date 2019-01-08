@@ -3,8 +3,7 @@
   width: 100vw;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
-  /* background-color: #F7F7F7; これは一旦コメントアウトする*/ }
+  transform: translateX(-50%); }
 
 /* flexbox
    ----------------------------------------------------------------- */
@@ -181,8 +180,8 @@
   background: url(../common/images/global_nav_btn01_01.png);
   background-position: left bottom;
   position: absolute;
-  top: 15.5%;
-  left: 24.7%; }
+  top: 67%;
+  left: 25%; }
 .headerThird-list__text i.second {
   background: url(../common/images/global_nav_btn01_02.png);
   position: absolute;
@@ -205,14 +204,6 @@
   display: inline-block;
   text-align: center;
   background-repeat: no-repeat; }
-
-.tableHead, .myTableHead {
-  background-color: #222;
-  color: #eee;
-  font-size: 12px; }
-
-.myTableHead {
-  font-size: 10px; }
 
 /* 4 紺色のバー
    ----------------------------------------------------------------- */
@@ -368,6 +359,10 @@
   width: 65%;
   height: 330px;
   position: relative; }
+  .small-block:hover img.small-block-outer__img {
+    opacity: 0.7; }
+  .small-block:hover .inner-block img {
+    opacity: 0.7; }
   .small-block-inner__heading {
     font-size: 22px;
     line-height: 22px; }
@@ -710,6 +705,15 @@ footer {
 
 /* 17 個人情報保護方針
    ----------------------------------------------------------------- */
+.rightarrow, .secondery-sns a.first:after, .secondery-sns a.second:after, .secondery-sns a.third:after {
+  content: ">";
+  margin: 0px 10px 0 10px;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  color: #aaa; }
+
 .secondery-list__text a:hover {
   text-decoration: underline; }
 .secondery-sns a {
@@ -723,27 +727,6 @@ footer {
     border-right: none; }
   .secondery-sns a:hover {
     background-color: #EDEDED; }
-  .secondery-sns a.first:after {
-    content: ">";
-    margin: 0px 10px 0 10px;
-    display: inline-block;
-    position: absolute;
-    top: 25%;
-    color: #272727; }
-  .secondery-sns a.second:after {
-    content: ">";
-    margin: 0px 10px 0 10px;
-    display: inline-block;
-    position: absolute;
-    top: 25%;
-    color: #272727; }
-  .secondery-sns a.third:after {
-    content: ">";
-    margin: 0px 10px 0 10px;
-    display: inline-block;
-    position: absolute;
-    top: 25%;
-    color: #272727; }
 .secondery-sns__item {
   display: inline-flex;
   font-size: 12px;

@@ -12,7 +12,7 @@
     $(function() {
       var topBtn = $('#page-top');
       topBtn.hide();
-      //スクロールが100に達したらボタン表示
+      //スクロールが160に達したらボタン表示
       $(window).scroll(function() {
         if ($(this).scrollTop() > 160) {
           topBtn.fadeIn();
@@ -30,9 +30,9 @@
   <!-- 上から出てくるメニューバー -->
   <div id="page-top" class="page-top">
     <div class="page-top-outer u-w1040 u-margin0auto l-displayflex u-pt10">
-      <img src="./common/images/header_mainlogo_pc01.png" alt="" width="169px" height="36px">
+      <a href="#"><img src="./common/images/header_mainlogo_pc01.png" alt="logo" width="169px" height="36px"></a>
       <div class="page-top-inner l-displayflex u-mla">
-        <img class="u-mr10 u-mt5" src="./common/images/header_tel01.png" alt="" width="189px" height="23px">
+        <img class="u-mr10 u-mt5" src="./common/images/header_tel01.png" alt="phone" width="189px" height="23px">
         <ul>
           <li>受付時間</li>
           <li>平日9:30〜20:00</li>
@@ -88,10 +88,8 @@
 
   <div class="headerThird u-w1040 u-margin20auto0">
     <ul class="headerThird-list l-displayflex u-pl0">
-      <li class="headerThird-list__text l-justify-center">N高について<i class="first"></i>
+      <li class="headerThird-list__text l-justify-center" style="position:relative">N高について<i class="first"></i>
       </li>
-      <!-- ここaがないせいで他とちょっとサイズ違ってしまっている -->
-      <!-- 下3つはhover時に画像が切り替わるようになっている -->
       <li class="headerThird-list__text l-justify-center"><a href="#">ネットコース<i class="second"></i></a></li>
       <li class="headerThird-list__text l-justify-center"><a href="#">通学コース<i class="third"></i></a></li>
       <li class="headerThird-list__text l-justify-center"><a href="#">提携スクール<i class="fourth"></i></a></li>
@@ -113,8 +111,6 @@
         <li class="headerfourth-list__text u-ml20">
           <div></div><a href="#">高校資格取得について</a>
         </li>
-
-        <!-- ここ聞こう。一番最初だけbeforeを適用しない方法ないか確認する。first-child的にやる方法あるのではないか。 -->
         <li class="headerfourth-list__text backslash"><a href="#">Advanced Program</a></li>
         <li class="headerfourth-list__text backslash"><a href="#">ITツール</a></li>
         <li class="headerfourth-list__text backslash"><a href="#">イベント・学校行事</a></li>
@@ -139,7 +135,7 @@
     <div class="main-outer l-displayflex">
       <div class="main-outer-box">
         <h1 class="main-outer-box__heading u-margin0auto u-pt30 u-white u-tacenter">N 高 に つ い て</h1>
-        <img class="main-outer-box__img l-displayblock u-margin0auto u-w5 u-mt25" src="./common/images/about_maintitle_ruby01.png" alt="">
+        <img class="main-outer-box__img l-displayblock u-margin0auto u-w5 u-mt25" src="./common/images/about_maintitle_ruby01.png" alt="aboutschool">
       </div>
     </div>
   </div>
@@ -197,25 +193,25 @@
             <p class="block-inner__text u-m0 u-pl10 u-pt5">考えを行動に移す力</p>
           </div>
         </div>
-        <img class="block-inner__img l-displayflex" src="./common/images/about_img00_01.png" alt="">
+        <img class="block-inner__img l-displayflex" src="./common/images/about_img00_01.png" alt="三角形">
       </div>
     </div>
 
     <!------------------------------------------------------------------------------------------------------------>
     <!-- 8 N standards -->
     <div class="small-block u-w680 u-margin0auto u-mtb80">
-      <div class="small-block-outer l-displayflex u-p30">
-        <img class="small-block-outer__img" src="./common/images/credo_card.jpg" alt="">
+      <a href="#"><div class="small-block-outer l-displayflex u-p30">
+        <img class="small-block-outer__img" src="./common/images/credo_card.jpg" alt="ロド">
         <div class="small-block-inner u-ml20 u-mt5">
           <h3 class="small-block-inner__heading">N STANDARDS</h3>
           <p class="small-block-inner__text u-mt25">N高等学校では教育方針をより具体化したN STANDARDS - エヌ スタンダード- という行動規範を設けております。生徒・教職員はN STANDARDSに記載された12の項目を常に意識することを心がけます。</p>
 
           <div class="inner-block u-mt35">
-            <img class="inner-block__img" src="./common/images/text_read_more01_black01.png" alt="">
+            <img class="inner-block__img" src="./common/images/text_read_more01_black01.png" alt="readmore">
             <!-- div全体をaにするためのa tag -->
           </div>
         </div>
-      </div>
+      </div></a>
     </div>
 
     <!------------------------------------------------------------------------------------------------------------>
@@ -232,7 +228,7 @@
             <p>Advanced Program：将来に繋がる豊富な選択授業</p>
           </small>
         </div>
-        <img class="small-blocksecond-outer__img" src="./common/images/about_img02_01_20170927.png" alt="">
+        <img class="small-blocksecond-outer__img" src="./common/images/about_img02_01_20170927.png" alt="グラフ">
       </div>
     </div>
 
@@ -243,7 +239,7 @@
             将来へ繋がる多くの経験ができる</h3>
           <p class="small-blockthird-inner__text u-bordertop__black u-pt15 u-mb25">N高では将来へ繋がるオリジナル授業であるAdvanced Program（アドバンスト プログラム）を数多く用意しております。多くの経験からやりたい事をみつけましょう。</p>
         </div>
-        <img class="small-blockthird-outer__img" src="./common/images/about_img02_02.png" alt="">
+        <img class="small-blockthird-outer__img" src="./common/images/about_img02_02.png" alt="将来の職業">
       </div>
     </div>
   </div>
@@ -263,19 +259,19 @@
 
       <div class="media-outer l-displayflex u-w1040 u-margin60auto ">
         <div class="media-inner l-displayflex u-w70">
-          <img class="media-inner__img" src="./common/images/about_img03_01.jpg" alt="">
+          <img class="media-inner__img" src="./common/images/about_img03_01.jpg" alt="スマホ">
         </div>
 
         <div class="block l-displayflex u-w28 u-ml3">
           <a class="block-anchor">
             <div class="block-inner">
-              <p class="block-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_basic_program01_white01.png" width='100%' alt=""></p>
+              <p class="block-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_basic_program01_white01.png" width='100%' alt="basicprogram"></p>
               <h3 class="block-inner__heading u-mtb30">高校卒業資格を<br />取得するための授業は<br />スマホ・パソコンで。</h3>
               <p class="block-inner__text">映像学習やレポートはネット上で行うので郵送の手間もなく、学習を進められます。映像授業は東京書籍(株)のインターネット講座を使用するため、安心して学ぶ事ができます。</p>
               <p class="block-inner__text__small u-mtb25">※N高等学校は学校教育法第1条に定められた高等学校です。全日制と同じ卒業資格を取得することができます。</p>
 
               <div class="block-inner-small">
-                <img class="block-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                <img class="block-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
               </div>
             </div>
           </a></div>
@@ -289,7 +285,7 @@
         <div class="secondblock l-displayflex u-w28 u-mr3">
           <a class="block-anchor">
             <div class="secondblock-inner">
-              <p class="secondblock-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_basic_program01_white01.png" width='100%' alt=""></p>
+              <p class="secondblock-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_basic_program01_white01.png" width='100%' alt="basicprogram"></p>
               <h3 class="secondblock-inner__heading u-mt30">学校に通うのは<br />年5日間程度<span>※</span>の<br />スクーリングだけ。</h3>
               <p class="secondblock-inner__text__small u-mtb20">※標準履修でかつネット学習の状況により適用される日数です。</p>
               <p class="secondblock-inner__text">スクリーングは沖縄伊計本校と全国のスクーリング会場から選べます。沖縄本校のスクーリングは大自然の中で充実した学びと、思い出を提供します。
@@ -297,12 +293,12 @@
 
 
               <div class="secondblock-inner-small  u-mt40">
-                <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
               </div>
             </div>
           </a></div>
         <div class="secondmedia-inner l-displayflex u-w70">
-          <img class="secondmedia-inner__img" src="./common/images/about_img03_02.jpg" alt="">
+          <img class="secondmedia-inner__img" src="./common/images/about_img03_02.jpg" alt="海">
         </div>
       </div><!-- 海で人がいる２個め　終わり -->
     </div><!-- bgc-greyのdiv -->
@@ -319,18 +315,18 @@
 
     <div class="media-outer l-displayflex u-w1040 u-margin60auto ">
       <div class="media-inner l-displayflex u-w70">
-        <img class="media-inner__img" src="./common/images/about_img04_01.jpg" alt="">
+        <img class="media-inner__img" src="./common/images/about_img04_01.jpg" alt="スマホで授業">
       </div>
 
       <div class="blockthird l-displayflex u-w28 u-ml3">
         <a class="block-anchor">
           <div class="blockthird-inner">
-            <p class="blockthird-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt=""></p>
+            <p class="blockthird-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt="advancedprogram"></p>
             <h3 class="blockthird-inner__heading u-mtb25">N高生なら<br />学校の授業とは別に<br />無料で学べる<br />多くの授業があります。</h3>
             <p class="blockthird-inner__text">ネットで行うアドバンスト プログラムでは生放送と教材がセットになった専用アプリを使用。大学受験、プログラミング、文芸小説、外国語、イラストレーター、コミック等ではN予備校を使用して生放送とオリジナル教材で将来への学習ができます。
               授業等ではN予備校を使用して生放送とオリジナル教材で将来への学習ができます。</p>
             <div class="blockthird-inner-small u-mt30">
-              <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+              <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
             </div>
           </div>
         </a>
@@ -344,17 +340,17 @@
       <div class="secondblock l-displayflex u-w28 u-mr3">
         <a class="block-anchor">
           <div class="block-inner">
-            <p class="fourthblock-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt=""></p>
+            <p class="fourthblock-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt="advancedprogram"></p>
             <h3 class="secondblock-inner__heading u-mtb25">実力派予備校講師<br />による合格するための<br />大学受験対策授業。</h3>
             <p class="secondblock-inner__text">有名予備校講師11名による生授業と講師による授業に紐づいた教材で大学合格を目指せます。アプリでは50冊分以上ボリュームを誇る参考書・問題集が利用できます。</p>
 
             <div class="secondblock-inner-small  u-mt40">
-              <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+              <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
             </div>
           </div>
         </a></div>
       <div class="secondmedia-inner l-displayflex u-w70">
-        <img class="secondmedia-inner__img" src="./common/images/about_img04_02.jpg" alt="">
+        <img class="secondmedia-inner__img" src="./common/images/about_img04_02.jpg" alt="講師">
       </div>
     </div>
     <!-- チョーク持ってる人　終わり -->
@@ -362,18 +358,18 @@
     <!-- パソコン画面　はじまり -->
     <div class="media-outer l-displayflex u-w1040 u-margin0auto ">
       <div class="media-inner l-displayflex u-w70">
-        <img class="media-inner__img" src="./common/images/about_img04_03.jpg" alt="">
+        <img class="media-inner__img" src="./common/images/about_img04_03.jpg" alt="パソコン">
       </div>
 
       <div class="blockthird l-displayflex u-w28 u-ml3">
         <a class="block-anchor">
           <div class="blockthird-inner">
-            <p class="blockthird-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt=""></p>
+            <p class="blockthird-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt="advancedprogram"></p>
             <h3 class="blockthird-inner__heading u-mtb25">ドワンゴの<br />トップエンジニアが<br />教える、実践的な<br />プログラミング授業。</h3>
             <p class="blockthird-inner__text">IT業界の最前線で活躍するプログラマが教える、実践的なプログラミング。全てのカリキュラムを終えた時、即戦力のプログラマとして実力が身に付いている事を約束します。</p>
 
             <div class="blockthird-inner-small u-mt30">
-              <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+              <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
             </div>
           </div>
         </a></div>
@@ -386,17 +382,17 @@
       <div class="secondblock l-displayflex u-w28 u-mr3">
         <a class="block-anchor">
           <div class="block-inner">
-            <p class="fourthblock-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt=""></p>
+            <p class="fourthblock-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt="advancedprogram"></p>
             <h3 class="secondblock-inner__heading u-mtb25">小説、漫画、イラスト、<br />ファッション、<br />パティシエなど専門的な<br />授業も盛りだくさん。</h3>
             <p class="secondblock-inner__text">夢の職業を学ぶ。夢を見つける為に、様々な仕事に触れる。多くの専門的な職業のアドバンストプログラムを通して、自らの将来を描くことができます。</p>
 
             <div class="secondblock-inner-small  u-mt40">
-              <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+              <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
             </div>
           </div>
         </a></div>
       <div class="secondmedia-inner l-displayflex u-w70">
-        <img class="secondmedia-inner__img" src="./common/images/about_img04_04.jpg" alt="">
+        <img class="secondmedia-inner__img" src="./common/images/about_img04_04.jpg" alt="授業の様子">
       </div>
     </div>
 
@@ -405,18 +401,18 @@
     <!-- 牛　始まり -->
     <div class="media-outer l-displayflex u-w1040 u-margin0auto ">
       <div class="media-inner l-displayflex u-w70">
-        <img class="media-inner__img" src="./common/images/about_img04_05.jpg" alt="">
+        <img class="media-inner__img" src="./common/images/about_img04_05.jpg" alt="牛">
       </div>
 
       <div class="blockthird l-displayflex u-w28 u-ml3">
         <a class="block-anchor">
           <div class="blockthird-inner">
-            <p class="blockthird-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt=""></p>
+            <p class="blockthird-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt="advancedprogram"></p>
             <h3 class="blockthird-inner__heading u-mtb25">日本各地の職業を<br />リアルで体験。<br />高校時代から社会と<br />関わる職業体験。</h3>
             <p class="blockthird-inner__text">N高では多くの自治体や企業、団体と協力し、生徒が様々な地域で職業体験が出来る機会を作ります。多くの仕事に触れることで得た広い視野と価値観は一生の財産となります。</p>
 
             <div class="blockthird-inner-small u-mt30">
-              <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+              <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
             </div>
           </div>
         </a></div>
@@ -429,17 +425,17 @@
       <div class="secondblock l-displayflex u-w28 u-mr3">
         <a class="block-anchor">
           <div class="block-inner">
-            <p class="fourthblock-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt=""></p>
+            <p class="fourthblock-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt="advancedprogram"></p>
             <h3 class="secondblock-inner__heading u-mtb25">世界の最先端を学ぶ<br />国際教養プログラム。</h3>
             <p class="secondblock-inner__text">海外大学　国際教育プログラム<br />国際的な生徒育成を目的とするN高等学校では世界の提携校のプログラムに参加する生徒を毎年募集しています。</p>
 
             <div class="secondblock-inner-small  u-mt40">
-              <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+              <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
             </div>
           </div>
         </a></div>
       <div class="secondmedia-inner l-displayflex u-w70">
-        <img class="secondmedia-inner__img" src="./common/images/about_img04_06.jpg" alt="">
+        <img class="secondmedia-inner__img" src="./common/images/about_img04_06.jpg" alt="海外大学">
       </div>
     </div>
 
@@ -449,18 +445,18 @@
 
     <div class="media-outer l-displayflex u-w1040 u-margin0auto ">
       <div class="media-inner l-displayflex u-w70">
-        <img class="media-inner__img" src="./common/images/about_img04_07.jpg" alt="">
+        <img class="media-inner__img" src="./common/images/about_img04_07.jpg" alt="ノート">
       </div>
 
       <div class="blockthird l-displayflex u-w28 u-ml3">
         <a class="block-anchor">
           <div class="blockthird-inner">
-            <p class="blockthird-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt=""></p>
+            <p class="blockthird-inner__image"><img class="u-p7-10-0-10" src="./common/images/text_advanced_program01_white01.png" width='100%' alt="advancedprogram"></p>
             <h3 class="blockthird-inner__heading u-mtb25">中学までの<br />学習範囲を学び直す<br />通学復習授業。</h3>
             <p class="blockthird-inner__text u-tajustify">N高では義務教育課程の学び直しをサポートします。中学での学習が原因で、高校の単位取得授業に不安がある方でも再学習することができます。</p>
 
             <div class="blockthird-inner-small u-mt30">
-              <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+              <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
             </div>
           </div>
         </a></div>
@@ -486,12 +482,12 @@
                 社会へ出る前からIT社会への対応力を養うことができます。</p>
 
               <div class="secondblock-inner-small  u-mt40">
-                <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
               </div>
             </div>
           </a></div>
         <div class="secondmedia-inner l-displayflex u-w70">
-          <img class="secondmedia-inner__img" src="./common/images/about_img05_01.jpg" alt="">
+          <img class="secondmedia-inner__img" src="./common/images/about_img05_01.jpg" alt="ITツール">
         </div>
       </div>
     </div>
@@ -508,7 +504,7 @@
 
         <div class="media-outer l-displayflex u-w1040 u-margin80auto ">
           <div class="media-inner l-displayflex u-w70">
-            <img class="media-inner__img" src="./common/images/about_img06_01.jpg" alt="">
+            <img class="media-inner__img" src="./common/images/about_img06_01.jpg" alt="イベントの様子">
           </div>
 
           <div class="blockthird l-displayflex u-w28 u-ml3">
@@ -518,7 +514,7 @@
                 <p class="blockthird-inner__text u-tajustify">ニコニコ超会議での文化祭や遠足など、エンターテイメントのプロの現場を体感できます。仲間と出会い力を合わせて目標を達成する喜びや経験は貴重な財産となるはずです。</p>
 
                 <div class="blockthird-inner-small u-mt30">
-                  <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                  <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
                 </div>
               </div>
             </a></div>
@@ -544,12 +540,12 @@
                     イノベーティブな考え方を学び、日本や世界を支える人材を育成するため、起業部を立ち上げます。</p>
 
                   <div class="secondblock-inner-small  u-mt40">
-                    <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                    <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
                   </div>
                 </div>
               </a></div>
             <div class="secondmedia-inner l-displayflex u-w70">
-              <img class="secondmedia-inner__img" src="./common/images/about_img10.jpg" alt="">
+              <img class="secondmedia-inner__img" src="./common/images/about_img10.jpg" alt="名刺">
             </div>
           </div>
         </div>
@@ -566,7 +562,7 @@
 
             <div class="media-outer l-displayflex u-w1040 u-margin80auto ">
               <div class="media-inner l-displayflex u-w70">
-                <img class="media-inner__img" src="./common/images/about_img07_01.jpg" alt="">
+                <img class="media-inner__img" src="./common/images/about_img07_01.jpg" alt="2台のパソコン">
               </div>
 
               <div class="blockthird l-displayflex u-w28 u-ml3">
@@ -576,7 +572,7 @@
                     <p class="blockthird-inner__text u-tajustify">N高ではネットの高校独自の部活動があります。囲碁、将棋、競技プログラミング、eスポーツである格闘ゲームなど。全国のN高生とともに切磋琢磨して成長することができます。</p>
 
                     <div class="blockthird-inner-small u-mt30">
-                      <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                      <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
                     </div>
                   </div>
                 </a></div>
@@ -601,18 +597,18 @@
                       <p class="secondblock-inner__text">今、社会が欲する多様性を持った人材を輩出することを目的とした教育プログラムを全国各地から学ぶことができます。高卒資格取得と、他では得られない学習を経験しましょう。</p>
 
                       <div class="secondblock-inner-small  u-mt40">
-                        <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                        <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
                       </div>
                     </div>
                   </a></div>
                 <div class="secondmedia-inner l-displayflex u-w70">
-                  <img class="secondmedia-inner__img" src="./common/images/about_img08_01.jpg" alt="">
+                  <img class="secondmedia-inner__img" src="./common/images/about_img08_01.jpg" alt="パソコンとスマホ">
                 </div>
               </div>
 
               <div class="media-outer l-displayflex u-w1040 u-margin80auto ">
                 <div class="media-inner l-displayflex u-w70">
-                  <img class="media-inner__img" src="./common/images/about_img08_02.jpg" alt="">
+                  <img class="media-inner__img" src="./common/images/about_img08_02.jpg" alt="談笑する生徒たち">
                 </div>
 
                 <div class="blockthird l-displayflex u-w28 u-ml3">
@@ -622,7 +618,7 @@
                       <p class="blockthird-inner__text">N高の通学コースでは、IT・グローバル社会で活躍するために必要な、基礎知識、実践力、思考力を備え、新たな価値を生み出す“創造力”を身につけることができます。日本で唯一の超実践的カリキュラムが、世界を変える人材を育成します。</p>
 
                       <div class="blockthird-inner-small u-mt30">
-                        <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                        <img class="blockthird-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
                       </div>
                     </div>
                   </a></div>
@@ -647,12 +643,12 @@
                         <p class="secondblock-inner__text u-tajustify">プログラミング、ファッション、ゲーム、アニメ、パティシエ、美容、国際教養プログラムなど、夢や目標に突き進みたいN高生のための提携スクール。</p>
 
                         <div class="secondblock-inner-small  u-mt40">
-                          <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="">
+                          <img class="secondblock-inner-small__img u-w25" src="./common/images/text_read_more01_black01.png" alt="readmore">
                         </div>
                       </div>
                     </a></div>
                   <div class="secondmedia-inner l-displayflex u-w70">
-                    <img class="secondmedia-inner__img" src="./common/images/about_img09_03.jpg" alt="">
+                    <img class="secondmedia-inner__img" src="./common/images/about_img09_03.jpg" alt="提携スクール">
                   </div>
                 </div>
               </div>
@@ -861,17 +857,17 @@
                 <div class="u-mla">
                   <ul class="secondery-sns l-displayflex">
                     <a class="first" href="#">
-                      <li class="secondery-sns__item u-pt8"><img src="./common/images/icon_twitter01.png" alt="">
+                      <li class="secondery-sns__item u-pt8"><img src="./common/images/icon_twitter01.png" alt="twitter">
                         <p class="u-ml5">N高等学校公式</br>twitter</p>
                       </li>
                     </a>
                     <a class="second u-pl10" href="#">
-                      <li class="secondery-sns__item u-pt8"><img src="./common/images/icon_facebook01.png" alt="">
+                      <li class="secondery-sns__item u-pt8"><img src="./common/images/icon_facebook01.png" alt="facebook">
                         <p class="u-ml5">N高等学校公式</br>facebook</p>
                       </li>
                     </a>
                     <a class="third u-pl10" href="#">
-                      <li class="secondery-sns__item u-pt8"><img src="./common/images/icon_youtube01.png" alt="">
+                      <li class="secondery-sns__item u-pt8"><img src="./common/images/icon_youtube01.png" alt="youtube">
                         <p class="u-ml5">N高等学校公式</br>Youtubeチャンネル</p>
                       </li>
                     </a>
